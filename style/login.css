@@ -1,0 +1,126 @@
+/*Documento exclusivo para a edição da página de Login*/
+
+/*
+==================
+importando arquivo com fonts
+=================*/
+@import "fonts.css";
+
+
+body{
+	background: #E5FCEC;
+background-image: url(../imgs/cenario.svg);
+	
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
+}
+html{
+	height: 100%;
+}
+
+
+
+
+.Form-div{
+
+	font-family: "Orkney";
+	background-color:  #E1EDD5;
+	color: #3C5A67;
+	position: absolute;
+  	right: 10vw;
+	top: 15vh;
+	width: 25%;
+	height: 60%;
+	border-radius: 30px;
+	box-shadow: 0px 16px 24px rgba(52, 60, 88, 0.4);
+	padding: 10px 20px;
+}
+
+.headerLog{
+	padding-left: 20px;
+	font-family: "Orkney";
+	margin-bottom: 15%;
+}
+.form{
+	/*align-items: center;*/
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+#submit{
+	font-family: "Orkney";
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #3C5A67;
+	height: 45px;
+	width: 100%;
+	border-radius: 25px;
+	border-style: none;
+}
+
+#chave{
+	width: 85%;
+	border-style: none;
+	height: 40px;
+	border-radius: 30px;
+	color: #757575;
+  	font-size: 18px;
+  	padding: 0 15px;
+}
+
+#chave:focus{
+	outline: none;
+	border: 3px solid #81B3ED;
+}
+/*
+==================
+EDIÇÃo DO PLACEHOLDER
+=================*/
+
+
+::-webkit-input-placeholder {
+  color: #757575;
+  font-size: 18px;
+  
+}
+::-moz-placeholder {
+  color: #757575;
+  font-size: 18px;
+ 
+}
+:-ms-input-placeholder {
+  color: #757575;
+  font-size: 18px;
+ 
+}
+::placeholder {
+  color: #757575;
+  font-size: 18px;
+ 
+}
+
+/*
+==================
+FIM
+=================*/
+
+#label{
+	padding-bottom: 22px;
+	font-size: 18px;
+}
+
+#bemvindo{
+	font-weight:100;
+	font-size: 40px;
+	margin-bottom: 7%;
+
+}
+
+#paracesso{
+	font-size: 18px;
+	font-weight: 600;
+	
+}
+

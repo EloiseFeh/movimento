@@ -1,5 +1,6 @@
 /**
  * @author Container Digital Jr <containerdigitaljr@gmail.com>
+ * Documento exclusivo para o Javascript da página de Login
  */
 
  
@@ -49,3 +50,9 @@ function verify(){
         fadeDuration: 250
       });
     });
+
+
+   $("#chave").focus(function() { 
+            $(this).next("span").css("display", "inline");
+
+        }); 
