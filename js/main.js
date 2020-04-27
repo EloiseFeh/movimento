@@ -13,6 +13,8 @@ window.onload = function() {
   }
 }
 
+
+
 function verify(){
 
 	if (chaveMestra) {
@@ -32,7 +34,11 @@ function verify(){
 			return true;
 
 		} else {
+
+			$("input[type='password']").focus().css("border", "2px solid red");
+
 			alert('A senha está incorreta!');
+
 			$("input[type='password']").val('');
 			return false;
 		}
@@ -50,9 +56,3 @@ function verify(){
         fadeDuration: 250
       });
     });
-
-
-   $("#chave").focus(function() { 
-            $(this).next("span").css("display", "inline");
-
-        }); 
