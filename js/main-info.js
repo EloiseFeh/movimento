@@ -1,3 +1,31 @@
 /**
  * @author Container Digital Jr <containerdigitaljr@gmail.com>
  */
+
+// var window_width = $(window).width() - $('#object').width();
+
+// var document_height = $(document).height() - $(window).height();
+
+// $(function () {
+//     $(window).scroll(function () {
+//         var scroll_position = $(window).scrollTop();
+//         var object_position_left = window_width * (scroll_position / document_height);
+//         $('#object').css({
+//             'left': object_position_left
+//         });
+//     });
+// });
+
+window.addEventListener('scroll', () => {
+	console.log('scroll');
+	var window_width = $(window).width() - $('#object').width();
+
+	 var document_height = $(document).height() - $(window).height();
+
+	 var scroll_position = $(window).scrollTop();
+        var object_position_left = window_width * (scroll_position / document_height);
+        $('#object').css({
+            'left': object_position_left
+        });
+
+});

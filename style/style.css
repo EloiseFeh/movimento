@@ -2,6 +2,8 @@
 
 body{
   margin: 0;
+   height: 9000px;
+    background: grey;
 }
 .slide {
   width: 100vw;
@@ -24,14 +26,14 @@ body{
 }
 
 /*esconder scrollbar*/
-.outer-wrapper {
+/*.outer-wrapper {
 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
   display:none;
-}
+}*/
 
 
 .one {
@@ -45,4 +47,14 @@ body{
 }
 .four {
   background: #00dfdf;
+}
+
+#object{
+ position: fixed;
+    left: 0;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    background: black;
+    z-index: 9999;
 }
