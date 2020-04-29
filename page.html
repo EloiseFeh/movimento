@@ -1,64 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-	
-	<meta charset="utf-8">
-  <title>Scroll test</title>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="style/jquery.modal.min.css">
-	<script  src="js/main-info.js"></script>
-	<script src="js/jquery-3.5.0.min.js"></script>
-	<script src="js/jquery.modal.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Scroll test</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery.modal.min.css" />
+    <script src="js/main-info.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+  </head>
+  <body>
+    <div id="object"></div>
+    <div id="outer-wrapper" onscroll="movimentacao()">
+      <div class="wrapper">
+        <div class="slide one">
+          <div id="ex1" class="modal">
+            <img
+              src="imgs/comic1.png"
+              style="width: 100px; height: 100px; align-content: center;"
+            />
+            <p>Thanks for clicking. That felt good.</p>
+            <a href="#" rel="modal:close">Close</a>
+          </div>
 
+          Link to open the modal
+          <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 
-  <div class="outer-wrapper">
-  <div class="wrapper">
-    <div class="slide one">
-    	
+          <br /><br /><br />
+        </div>
 
-<div id="ex1" class="modal">
-	<img src="imgs/comic1.png" style="width: 100px; height: 100px; align-content: center;">
-  <p>Thanks for clicking. That felt good.</p>
-  <a href="#" rel="modal:close">Close</a>
-</div>
-
-Link to open the modal
-<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
-
-  <br><br><br>
-
-  <div id='object'></div>
-
-
+        <div class="slide two"></div>
+        <div class="slide three"></div>
+        <div class="slide four"></div>
+      </div>
     </div>
-
-    <div class="slide two">
-    	
-
-
-
-
-    </div>
-    <div class="slide three">
-    	
-
-
-
-
-
-    </div>
-    <div class="slide four">
-    	
-
-
-
-
-
-    </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
