@@ -2,10 +2,6 @@
  * @author Container Digital Jr <containerdigitaljr@gmail.com>
  */
 
-
-
-
-
 window.addEventListener('scroll', () => {
 	console.log('scroll');
 
@@ -23,3 +19,8 @@ window.addEventListener('scroll', () => {
         });
 
 });
+
+function movimentacao() {
+  console.log($(".wrapper").offset().left * -1);
+}
+
