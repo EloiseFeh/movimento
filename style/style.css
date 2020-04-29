@@ -3,10 +3,12 @@
 
 body{
     margin: 0;
-    /*background: grey;*/
+    background: #DEF3FD;
 }
 .slide {
-  width: 100vw;
+  /*width: 100vw;
+  height: 100vh;*/
+  width: 100%;
   height: 100vh;
 }
 .wrapper {
@@ -37,31 +39,39 @@ body{
 }
 
 
+.intro {
+   background-image: url(../imgs/intro.png);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
+}
 
 .one {
-  background: #efdefe;
-   background-image: url(../imgs/s1.svg);
+   background-image: url(../imgs/s1.png);
     background-position: center; 
    background-repeat:no-repeat;
    background-size:contain;
 }
 .two {
-  background: #a3f3d3;
-   background-image: url(../imgs/s2.svg);
+   background-image: url(../imgs/s2.png);
     background-position: center; 
    background-repeat:no-repeat;
    background-size:contain;
 }
 .three {
-  background: #0bbaa0;
-   background-image: url(../imgs/s3.svg);
+   background-image: url(../imgs/s3.png);
     background-position: center; 
    background-repeat:no-repeat;
    background-size:contain;
 }
 .four {
-  background: #00dfdf;
-   background-image: url(../imgs/s4.svg);
+   background-image: url(../imgs/s4.png);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
+}
+.five {
+   background-image: url(../imgs/s5.png);
     background-position: center; 
    background-repeat:no-repeat;
    background-size:contain;
