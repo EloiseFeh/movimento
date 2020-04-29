@@ -1,9 +1,10 @@
 @import "fonts.css";
 
 body{
-  margin: 0;
-   height: 9000px;
-    background: grey;
+    margin: 0;
+    /*background: grey;*/
+
+
 }
 .slide {
   width: 100vw;
@@ -26,32 +27,48 @@ body{
 }
 
 /*esconder scrollbar*/
-/*.outer-wrapper {
+.outer-wrapper {
 
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
   display:none;
-}*/
+}
 
 
 .one {
   background: #efdefe;
+   background-image: url(../imgs/s1.svg);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
 }
 .two {
   background: #a3f3d3;
+   background-image: url(../imgs/s2.svg);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
 }
 .three {
   background: #0bbaa0;
+   background-image: url(../imgs/s3.svg);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
 }
 .four {
   background: #00dfdf;
+   background-image: url(../imgs/s4.svg);
+    background-position: center; 
+   background-repeat:no-repeat;
+   background-size:contain;
 }
 
 #object{
  position: fixed;
-    left: 0;
+    left: 100px;
     top: 50%;
     height: 30px;
     width: 30px;
