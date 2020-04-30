@@ -1,20 +1,23 @@
 @import "fonts.css";
 
-
-body{
-    margin: 0;
-    background: #DEF3FD;
+body {
+  margin: 0;
+  background: #def3fd;
 }
 .slide {
   /*width: 100vw;
   height: 100vh;*/
   min-width: 960px;
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 19900px;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -30,21 +33,18 @@ body{
 
 /*esconder scrollbar*/
 .outer-wrapper {
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
-  display:none;
+  display: none;
 }
 
-
-.intro {
+/*.intro {
    background-image: url(../imgs/intro.png);
     background-position: left bottom; 
    background-repeat:no-repeat;
    background-size: contain;
-   /*background-size:1859px 1080px !important;*/
 }
 
 .one {
@@ -53,7 +53,6 @@ body{
    background-repeat:no-repeat;
 
    background-size: contain;
-   /*background-size:1280px 359px;*/
 }
 .two {
    background-image: url(../imgs/s2.png);
@@ -61,22 +60,18 @@ body{
    background-repeat:no-repeat;
 
    background-size: contain;
-   /*background-size:3952px 1080px;*/
 }
 .three {
    background-image: url(../imgs/s3.png);
     background-position: left bottom; 
    background-repeat:no-repeat;
    background-size: contain;
-
-   /*background-size:3772px 1080px;*/
 }
 .four {
    background-image: url(../imgs/s4.png);
     background-position: left bottom; 
    background-repeat:no-repeat;
    background-size: contain;
-   /*background-size:2822px 1080px;*/
 }
 .five {
    background-image: url(../imgs/s5.png);
@@ -84,8 +79,31 @@ body{
    background-repeat:no-repeat;
    background-size:contain;
 
-}
+=======
+  background-image: url(../imgs/intro.svg);
+  width: 2000px;
+}*/
 
+.one {
+  background-image: url(../imgs/s1.svg);
+  width: 4000px;
+}
+.two {
+  background-image: url(../imgs/s2.svg);
+  width: 3600px;
+}
+.three {
+  background-image: url(../imgs/s3.svg);
+  width: 4600px;
+}
+.four {
+  background-image: url(../imgs/s4.svg);
+  width: 2000px;
+}
+.five {
+  background-image: url(../imgs/s5.svg);
+  width: 3700px;
+}
 
 #object {
   position: absolute;
