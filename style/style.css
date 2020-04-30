@@ -5,6 +5,12 @@ body {
   background: #def3fd;
   font-family: "Orkney";
 }
+.est{
+ position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
 .tutorial{
   height: 0;
     width: 8%;
@@ -72,7 +78,7 @@ body {
 }
 
 .intro {
-   background-image: url(../imgs/intro.svg);
+   background-image: url(../imgs/intro2.png);
     width: 2000px;
 }
 .one {
