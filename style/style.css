@@ -8,7 +8,7 @@ body{
 .slide {
   /*width: 100vw;
   height: 100vh;*/
-  width: 100%;
+  min-width: 960px;
   height: 100vh;
 }
 .wrapper {
@@ -41,40 +41,49 @@ body{
 
 .intro {
    background-image: url(../imgs/intro.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
-   background-size:contain;
+   background-size: contain;
+   /*background-size:1859px 1080px !important;*/
 }
 
 .one {
    background-image: url(../imgs/s1.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
-   background-size:contain;
+
+   background-size: contain;
+   /*background-size:1280px 359px;*/
 }
 .two {
    background-image: url(../imgs/s2.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
-   background-size:contain;
+
+   background-size: contain;
+   /*background-size:3952px 1080px;*/
 }
 .three {
    background-image: url(../imgs/s3.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
-   background-size:contain;
+   background-size: contain;
+
+   /*background-size:3772px 1080px;*/
 }
 .four {
    background-image: url(../imgs/s4.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
-   background-size:contain;
+   background-size: contain;
+   /*background-size:2822px 1080px;*/
 }
 .five {
    background-image: url(../imgs/s5.png);
-    background-position: center; 
+    background-position: left bottom; 
    background-repeat:no-repeat;
    background-size:contain;
+
 }
 
 
