@@ -10,26 +10,236 @@
     <script src="js/jquery.modal.min.js"></script>
   </head>
   <body>
-    <div id="object"></div>
+  
+<div id = "object" style="background-image: url('imgs/ciclista.gif')">
+</div>
+
     <div id="outer-wrapper" onscroll="movimentacao()">
       <div class="wrapper">
-        <div class="slide intro"></div>
-
-        <div class="slide one">
-          <div id="ex1" class="modal">
-            <p>Thanks for clicking. That felt good.</p>
-            <a href="#" rel="modal:close">Close</a>
+        <div class="slide intro">
+          
+          <div class="tutorial">
+            <img class="tutorial-img" src="imgs/tutorial.gif">
           </div>
 
-          Link to open the modal
-          <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+        </div>
+
+        <div class="slide one">
+
+<!-- inicio do pop-up de dialogo -->
+
+      <div id="ex1" class="modal">
+        <div class="dialogo">
+
+          <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Olá! Tudo bem?</p>
+
+              <a class="link" href="#pessoa2" rel="modal:open">Próximo</a>
+
+            </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="modal" id="pessoa2" style="display:none;">
+        <div class="dialogo">
+
+          <div class="texto">
+              <h3>Pessoa: </h3>
+              <p>Mais ou menos. Ultimamente estou sentindo muita dor lombar.</p>
+
+              <a class="link" href="#ex1" rel="modal:open">Anterior</a>
+              <a class="link" href="#lancet2" rel="modal:open">Próximo</a>
+          </div>
+
+          <img class="dialogo-img" src="imgs/mulher1.png">
+
+         </div>
+      </div>
+
+
+
+      <div id="lancet2" class="modal">
+       <div class="dialogo">
+
+          <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Você tem que praticar a Saúde Positiva.</p>
+
+              <a class="link" href="#pessoa2" rel="modal:open">Anterior</a>
+              <a class="link" href="#pessoa3" rel="modal:open">Próximo</a>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="modal" id="pessoa3" style="display:none;">
+        <div class="dialogo">
+
+          <div class="texto">
+            <h3>Pessoa: </h3>
+            <p>Mas o que é Saúde Positiva, Lancet?</p>
+
+            <a class="link" href="#lancet2" rel="modal:open">Anterior</a>
+            <a class="link" href="#lancet3" rel="modal:open">Próximo</a>
+         </div>
+
+         <img class="dialogo-img" src="imgs/mulher1.png">
+      
+        </div>
+      </div>
+
+      <div class="modal" id="lancet3" style="display:none;">
+        <div class="dialogo">
+
+          <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Saúde Positiva é  a habilidade de adaptar-se e  se auto gerenciar, considerando desafios sociais, físicos, e emocionais. </p>
+
+              <a class="link" href="#pessoa3" rel="modal:open">Anterior</a>
+              <a class="link" href="#pessoa4" rel="modal:open">Próximo</a>
+            </div>
+        </div>
+      </div>
+
+       <div class="modal" id="pessoa4" style="display:none;">
+          <div class="dialogo">
+                
+              <div class="texto">
+                <h3>Pessoa: </h3>
+                <p>E qual o seu benefício? </p>
+
+                <a class="link" href="#lancet3" rel="modal:open">Anterior</a>
+                <a class="link" href="#lancet4" rel="modal:open">Próximo</a>
+              </div>
+            
+               <img class="dialogo-img" src="imgs/mulher1.png">
+      
+          </div>
+      </div>
+
+       <div class="modal" id="lancet4" style="display:none;">
+          <div class="dialogo">
+
+            <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Ela promove alternativas a curas e uma vida de alta qualidade e significado para quem possui dor lombar persistente, gerando uma mudança de expectativa e funcionalidade. </p>
+              <p> A abordagem para dor lombar deve ser ativa, de forma que lida com um problema crônico de saúde por meio de estratégias auto executadas e aprender a receber cuidado quando necessário.</p>
+              <p>As intervenções ocupacionais também são necessárias, para reforçar as pessoas ao seu redor que você pode conviver com a dor e que ela não significa lesão em busca de tratamento.</p>
+
+              <a class="link" href="#pessoa4" rel="modal:open">Anterior</a>
+              <a class="link" href="#pessoa5" rel="modal:open">Próximo</a>
+            </div>
+
+          </div>
+      </div>
+
+       <div class="modal" id="pessoa5" style="display:none;">
+          <div class="dialogo">
+                
+            <div class="texto">
+              <h3>Pessoa: </h3>
+              <p>Então eu posso praticar minhas atividades diárias normalmente?</p>
+
+              <a class="link" href="#lancet4" rel="modal:open">Anterior</a>
+              <a class="link" href="#lancet5" rel="modal:open">Próximo</a>
+            </div>
+            
+               <img class="dialogo-img" src="imgs/mulher1.png">
+      
+          </div>
+
+      </div>
+
+       <div class="modal" id="lancet5" style="display:none;">
+          <div class="dialogo">
+
+          <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Sim. O descanso na cama pode atrasar a recuperação da dor nas costas, por isso, é importante se manter ativo.  </p>
+              <p> O retorno precoce à atividade normal e o trabalho aumentam a velocidade de recuperação.</p>
+              <p>A dor nem sempre é igual a lesão, especialmente no caso de dor a longo prazo. </p>
+
+              <a class="link" href="#pessoa5" rel="modal:open">Anterior</a>
+              <a class="link" href="#pessoa6" rel="modal:open">Próximo</a>
+            </div>
+
+          </div>
+      </div>
+
+       <div class="modal" id="pessoa6" style="display:none;">
+        <div class="dialogo">
+                
+          <div class="texto">
+            <h3>Pessoa: </h3>
+            <p>Então a dor não impede ter uma vida saudável e produtiva?</p>
+
+            <a class="link" href="#lancet5" rel="modal:open">Anterior</a>
+            <a class="link" href="#lancet6" rel="modal:open">Próximo</a>
+          </div>
+            
+               <img class="dialogo-img" src="imgs/mulher1.png">
+      
+        </div>
+
+      </div>
+
+        <div class="modal" id="lancet6" style="display:none;">
+          <div class="dialogo">
+
+            <img class="dialogo-img" src="imgs/lancet.png">
+
+            <div class="texto">
+              <h3>Lancet: </h3>
+              <p>Exatamente!</p>
+              <p>Para aqueles que acham difícil retomar a atividade, há programas disponíveis para ajudar nos centros de saúde e locais de trabalho.</p>
+
+              <a class="link" href="#pessoa6" rel="modal:open">Anterior</a>
+              <a class="link" href="#" rel="modal:open">Encerrar conversa.</a>
+            </div>
+
+          </div>
+      </div>
+
+
+<!-- Fim do Diálogo -->
+
+          
+          <a href="#ex1" rel="modal:open"><div class="s2"></div> </a>
 
           <br /><br /><br />
         </div>
 
         <div class="slide two"></div>
-        <div class="slide three"></div>
-        <div class="slide four"></div>
+        <div class="slide three">
+           <section class="anime">
+            <div class="aviso1">
+              <p class="a"> Pessoas com dor lombar incapacitante e suas características gerais.</p>
+            </div>
+
+          </section>
+
+        </div>
+        <div class="slide four">
+
+
+
+        </div>
         <div class="slide five"></div>
       </div>
     </div>

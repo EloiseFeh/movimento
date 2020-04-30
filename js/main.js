@@ -50,9 +50,4 @@ function verify(){
 }
 
 
-  $('a[href="#ex1"]').click(function(event) {
-      event.preventDefault();
-      $(this).modal({
-        fadeDuration: 250
-      });
-    });
+

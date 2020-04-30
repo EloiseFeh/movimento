@@ -3,11 +3,42 @@
 body {
   margin: 0;
   background: #def3fd;
+  font-family: "Orkney";
 }
+.tutorial{
+  height: 0;
+    width: 8%;
+   position: absolute;
+  left: 20px;
+  top: 83%;
+}
+.tutorial-img{
+    /*height: 0;*/
+    width: 15% !important;
+}
+.link{
+  color: #339966;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4%;
+}
+
+.link:hover{
+   color: #207B74;
+}
+.dialogo{
+  display: flex !important;
+  align-items: center;
+}
+
+.dialogo-img{
+  width: 100px;
+  height: 100px;
+  padding-right: 10%;
+  padding-left: 5%;
+}
+
 .slide {
-  /*width: 100vw;
-  height: 100vh;*/
-  min-width: 960px;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,50 +71,10 @@ body {
   display: none;
 }
 
-/*.intro {
-   background-image: url(../imgs/intro.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-   background-size: contain;
+.intro {
+   background-image: url(../imgs/intro.svg);
+    width: 2000px;
 }
-
-.one {
-   background-image: url(../imgs/s1.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-
-   background-size: contain;
-}
-.two {
-   background-image: url(../imgs/s2.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-
-   background-size: contain;
-}
-.three {
-   background-image: url(../imgs/s3.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-   background-size: contain;
-}
-.four {
-   background-image: url(../imgs/s4.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-   background-size: contain;
-}
-.five {
-   background-image: url(../imgs/s5.png);
-    background-position: left bottom; 
-   background-repeat:no-repeat;
-   background-size:contain;
-
-=======
-  background-image: url(../imgs/intro.svg);
-  width: 2000px;
-}*/
-
 .one {
   background-image: url(../imgs/s1.svg);
   width: 4000px;
@@ -106,11 +97,65 @@ body {
 }
 
 #object {
-  position: absolute;
-  left: 250px;
-  top: 50%;
-  height: 30px;
-  width: 30px;
-  background: black;
+   position: absolute;
+    left: 20%;
+    top: 77%;
+    height: 0;
+    width: 11%;
+    z-index: 1;
+    padding-bottom: 15%;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+.s2{
   z-index: 9999;
+    position: absolute;
+    left: 15.2%;
+    top: 77%;
+    width: 0.6%;
+    height: 0;
+    padding-bottom: 0.64%;
+    float: right;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+}
+.show{
+  z-index: 9999;
+    position: absolute;
+    right: : 0;
+    top: 77%;
+    width: 0.6%;
+    height: 0;
+    padding-bottom: 0.64%;
+    float: right;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+}
+.aviso1{
+    position: absolute;
+    width: 365px;
+    height: 56px;
+    background-color: transparent;
+    border-radius: 10px;
+    left: 811px;
+    top: 264px
+
+}
+
+
+.anime{
+    transform: translate3d(-50px,0,0);
+    opacity: 0;
+    transition: 0.3s;
+}
+.anime-start{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+p.a{
+  text-align: center;
+  margin:10px 0 ;
+
 }
