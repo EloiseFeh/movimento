@@ -1,20 +1,20 @@
 @import "fonts.css";
 
-
-body{
-    margin: 0;
-    background: #DEF3FD;
+body {
+  margin: 0;
+  background: #def3fd;
 }
 .slide {
-  /*width: 100vw;
-  height: 100vh;*/
-  width: 100%;
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 400vw;
+  width: 19900px;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -30,53 +30,38 @@ body{
 
 /*esconder scrollbar*/
 .outer-wrapper {
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
-  display:none;
+  display: none;
 }
 
-
 .intro {
-   background-image: url(../imgs/intro.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/intro.svg);
+  width: 2000px;
 }
 
 .one {
-   background-image: url(../imgs/s1.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/s1.svg);
+  width: 4000px;
 }
 .two {
-   background-image: url(../imgs/s2.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/s2.svg);
+  width: 3600px;
 }
 .three {
-   background-image: url(../imgs/s3.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/s3.svg);
+  width: 4600px;
 }
 .four {
-   background-image: url(../imgs/s4.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/s4.svg);
+  width: 2000px;
 }
 .five {
-   background-image: url(../imgs/s5.png);
-    background-position: center; 
-   background-repeat:no-repeat;
-   background-size:contain;
+  background-image: url(../imgs/s5.svg);
+  width: 3700px;
 }
-
 
 #object {
   position: absolute;
