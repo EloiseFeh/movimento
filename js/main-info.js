@@ -92,7 +92,3 @@ animeScroll(target7,32,4);
 animeScroll(placa,10,4);
 
 }
-
-
-
-
