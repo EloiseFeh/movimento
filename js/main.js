@@ -22,13 +22,12 @@ function verify(){
 		var senha = document.form.chave.value;
 
 		if (senha == '') {
-
-			alert("Preencha os campos");
+			$("input[type='password']").focus().css("border", "2px solid red");
+			
 			return false;
 		
 		} else if (senha == chaveMestra) {
-			alert('Bem vindo');
-
+			
 			localStorage.setItem('senha', chaveMestra);
 
 			return true;
@@ -37,7 +36,7 @@ function verify(){
 
 			$("input[type='password']").focus().css("border", "2px solid red");
 
-			alert('A senha está incorreta!');
+			
 
 			$("input[type='password']").val('');
 			return false;
