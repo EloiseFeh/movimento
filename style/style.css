@@ -86,18 +86,252 @@ body {
   padding-right: 10%;
   padding-left: 5%;
 }
+/*PERSONAGENS SESSAO 1*/
+.luiziane{
+    position: absolute;
+    left: 1305px;
+    top: calc(100vh - 165px);
+    height: 629px;
+    width: 59px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.laerte{
+    position: absolute;
+    left: 1677px;
+    top: calc(100vh - 179px);
+    height: 629px;
+    width: 41px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.rodiney{
+    position: absolute;
+    left: 1794px;
+    top: calc(100vh - 183px);
+    height: 629px;
+    width: 37px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.glaucyanyh{
+    position: absolute;
+    left: 2092px;
+    top: calc(100vh - 165px);
+    height: 629px;
+    width: 40px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.ciclistas{
+    position: absolute;
+    left: 10739px;
+    top: calc(100vh - 165px);
+    height: 150px;
+    width: auto;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+/*CENARIO SESSAO 1*/
+
+.bandeira {
+    position: absolute;
+    left: 1490px;
+    top: calc(100vh - 545px);
+    height: 629px;
+    width: 352px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+.passaro {
+    position: absolute;
+    height: 67px;
+    left: 1698px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.passarin {
+      position: absolute;
+    height: 67px;
+    left: 1656px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+/*MODAL INTERATIVO SESSAO1*/
 
 .s2 {
-  position: absolute;
-  left: 3006px;
-  top: 77%;
-  height: 126px;
-  float: right;
-  background-color: transparent;
-  border-color: black;
-  border-style: solid;
-  width: 121px;
+    position: absolute;
+    left: 1302px;
+    top: calc(100vh - 169px);
+    height: 106px;
+    float: right;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 60px;
+    z-index: 1;
 }
+
+/*PLACAS IMPORTANTE LEMBRAR*/
+
+.importante1{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 258px);
+    left: 2869px;
+
+}
+.importante2{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 294px);
+    left: 5225px;
+
+}
+
+
+/*OUTDOORS1*/
+.outdoor11 {
+    position: absolute;
+    left: -3226px;
+    top: calc(100vh - 515px);
+    width: auto;
+    height: 467px;
+}
+
+
+
+/*FOGOS*/
+
+/*TEXTOS SERRILHADOS*/
+.texto1{
+    position: absolute;
+    height: 483px;
+    left: -2232px;
+    top: calc(100vh - 574px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto2 {
+    position: absolute;
+    height: 483px;
+    left: -1870px;
+    top: calc(100vh - 476px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto3 {
+    position: absolute;
+    height: 483px;
+    left: -1309px;
+    top: calc(100vh - 474px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
+
+/*OUTDOORS2*/
+.outdoor21 {
+    position: absolute;
+    left: -725px;
+    top: calc(100vh - 539px);
+    width: auto;
+    height: 490px;
+}
+
+/*PLACA INTRODUÇÃO SESSAO 3*/
+.placa {
+    width: auto;
+    position: absolute;
+    height: 367px;
+    top: calc(100vh - 473px);
+    left: 5947px;
+
+}
+.placagif{
+    width: auto;
+    position: absolute;
+    height: 367px;
+    top: calc(100vh - 473px);
+    left: -2471px;
+
+}
+
+
+
+/*PREDIOS*/
+.predio1{
+    width: auto;
+    position: absolute;
+    height: 299px;
+    top: calc(100vh - 383px);
+    left: 6310px;
+  }
+  .predio2{
+    width: auto;
+    position: absolute;
+    height: 281px;
+    top: calc(100vh - 365px);
+    left: 7205px;
+  }
+  .predio3{
+    width: auto;
+    position: absolute;
+    height: 492px;
+    top: calc(100vh - 576px);
+    left: 7805px;
+  }
+
+/*HOLOGRAMAS*/
+.holograma1 {
+    position: absolute;
+    left: -2014px;
+    top: calc(100vh - 650px);
+    width: auto;
+    height: 575px;
+}
+.holograma2 {
+    position: absolute;
+    left: -1261px;
+    top: calc(100vh - 648px);
+    width: auto;
+    height: 610px;
+}
+.holograma3 {
+    position: absolute;
+    left: -753px;
+    top: calc(100vh - 623px);
+    width: auto;
+    height: 585px;
+}
+
+/*METEORO*/
+
+/*PALCO*/
+
 
 .show {
   z-index: 9999;
@@ -112,153 +346,16 @@ body {
   border-color: black;
   border-style: solid;
 }
-.aviso1 {
-  position: absolute;
-  width: 1.85%;
-  height: 0;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 54.27%;
-  padding-bottom: 0.27%;
-  top: 31.7%;
-}
-.aviso2 {
-  position: absolute;
-  width: 1.85%;
-  height: 0;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 58.6%;
-  padding-bottom: 0.27%;
-  top: 4.7%;
-}
-.aviso3 {
-  position: absolute;
-  width: 3.14%;
-  height: 0;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 61.4%;
-  padding-bottom: 0.77%;
-  top: -5%;
-}
-.bandeira {
-  position: absolute;
-  left: 1500px;
-  top: calc(100vh - 660px);
-  height: 629px;
-  width: 466px;
-  z-index: 1;
-  background-size: 100% !important;
-  background-repeat: no-repeat;
-}
-.passaro {
-  position: absolute;
-  height: 67px;
-  left: 3531px;
-  /* padding-bottom: 0.77%; */
-  top: calc(100vh - 566px);
-  background-size: 100% !important;
-  width: 57px;
-  background-repeat: no-repeat;
-}
 
-.passarin {
-  position: absolute;
-  height: 46px;
-  left: 3483px;
-  /* padding-bottom: 0.77%; */
-  top: 585px;
-  background-size: 100% !important;
-  width: 52px;
-  background-repeat: no-repeat;
-}
-.outdoor1 {
-  position: absolute;
-  height: 0;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 25.08%;
-  padding-bottom: 0.77%;
-  top: 39%;
-}
-.texto1 {
-  position: absolute;
-  height: 483px;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 300px;
-  top: 61px;
-  width: 403px;
-  background-repeat: no-repeat;
-  background-size: 100% !important;
-}
-.texto2 {
-  position: absolute;
-  height: 483px;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 997px;
-  top: 71px;
-  width: 515px;
-  background-repeat: no-repeat;
-  background-size: 100% !important;
-}
-.texto3 {
-  position: absolute;
-  height: 483px;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 2395px;
-  top: 59px;
-  width: 515px;
-  background-repeat: no-repeat;
-  background-size: 100% !important;
-}
-.placa {
-  position: absolute;
-  height: 483px;
-  /**left: 3712px;*/
-  float: left;
-  left: 9699px;
-  top: 422px;
-  width: 515px;
-  background-repeat: no-repeat;
-  background-size: 100% !important;
-  z-index: 1;
-}
-.outdoor2 {
-  position: absolute;
-  height: 0;
-  background-color: transparent;
-  border-radius: 10px;
-  left: 44.66%;
-  padding-bottom: 0.77%;
-  top: 11%;
-}
 
-.hm {
-  background-size: 100% !important;
-  width: 134%;
-}
 
-.hm2 {
-  background-size: 100% !important;
-  width: 197%;
-}
-.hm3 {
-  background-size: 100% !important;
-  width: 129%;
-}
 
-.out1 {
-  background-size: 100% !important;
-  width: 50%;
-}
-.out2 {
-  background-size: 100% !important;
-  width: 61%;
-}
+
+
+
+
+
+/*ANIMAÇÕES*/
 .anime {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
@@ -299,7 +396,12 @@ body {
   opacity: 0;
   transition: 0.3s;
 }
+.anime-placa{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
 
+}
 .anime-start {
   transform: translate3d(0, 0, 0);
   opacity: 1;

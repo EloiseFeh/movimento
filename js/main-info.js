@@ -18,70 +18,181 @@ window.addEventListener("scroll", () => {
 });
 
 function trocar1() {
-  var imagem = document.getElementById("a");
-  if (imagem.alt == "out1") {
-    imagem.src = "imgs/outdoor12.png";
-    imagem.alt = "out2";
-  } else if (imagem.alt == "out2") {
-    imagem.src = "imgs/outdoor13.png";
-    imagem.alt = "out3";
-  } else {
-    imagem.src = "imgs/outdoor11.png";
-    imagem.alt = "out1";
-  }
+    var imagem=document.getElementById("outdoor11");
+    if(imagem.alt == "outdoor11"){
+        imagem.src = "imgs/outdoors1/outdoor12.png";
+        imagem.alt = "outdoor12";
+    }else if (imagem.alt=="outdoor12") {
+        imagem.src = "imgs/outdoors1/outdoor13.png";
+        imagem.alt = "outdoor13";
+    }
+    else {
+        imagem.src = "imgs/outdoors1/outdoor11.png";
+        imagem.alt = "outdoor11";
+    }
 }
 
 function trocar2() {
-  var imagem = document.getElementById("b");
-  if (imagem.alt == "out21") {
-    imagem.src = "imgs/outdoor22.png";
-    imagem.alt = "out22";
-  } else if (imagem.alt == "out22") {
-    imagem.src = "imgs/outdoor23.png";
-    imagem.alt = "out23";
-  } else if (imagem.alt == "out23") {
-    imagem.src = "imgs/outdoor24.png";
-    imagem.alt = "out24";
+  var imagem = document.getElementById("outdoor21");
+  if (imagem.alt == "outdoor21") {
+    imagem.src = "imgs/outdoors2/outdoor22.png";
+    imagem.alt = "outdoor22";
+  } else if (imagem.alt == "outdoor22") {
+    imagem.src = "imgs/outdoors2/outdoor23.png";
+    imagem.alt = "outdoor23";
+  } else if (imagem.alt == "outdoor23") {
+    imagem.src = "imgs/outdoors2/outdoor24.png";
+    imagem.alt = "outdoor24";
   } else {
-    imagem.src = "imgs/outdoor21.png";
-    imagem.alt = "out21";
+    imagem.src = "imgs/outdoors2/outdoor21.png";
+    imagem.alt = "outdoor21";
   }
 }
 
 function movimentacao() {
   var scroll = $(".wrapper").offset().left * -1;
-  (target = $(".anime")),
+    (target = $(".anime")),
     (target2 = $(".anime2")),
     (target3 = $(".anime3")),
     (target4 = $(".anime4")),
     (target5 = $(".anime5")),
     (target6 = $(".anime6")),
     (target7 = $(".anime7")),
-    (placa = $(".anime8")),
+    (target8 = $(".anime-placa")),
+    (target9 = $(".anime8")),
     (animationClass = "anime-start");
-  //console.log("auau "+scroll);
-  //console.log(target);
-  //console.log(animationClass);
 
+
+  // FUNÇÃO QUE GERA A ANIMAÇÃO SURGINDO DO NADA BASEADA NA APRROXIMAÇÃO
   function animeScroll(classe, numerador, denominador) {
     var offset = ($(window).width() * numerador) / denominador;
     classe.each(function() {
-      var itemLeft = $(this).offset().left;
-      console.log(itemLeft);
-      if (scroll - offset > itemLeft) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
+        var itemLeft = $(this).offset().left;
+          console.log(itemLeft);
+          if (scroll - offset > itemLeft) {
+            $(this).addClass(animationClass);
+          } else {
+            $(this).removeClass(animationClass);
       }
     });
   }
+//FUNÇÃO QUE MUDA O OUTDOOR DE TAMANHO
 
-  animeScroll(target, 11.5, 4);
-  animeScroll(target2, 16, 4);
-  animeScroll(target3, 19, 4);
-  animeScroll(target4, 28, 4);
-  animeScroll(target5, 22, 4);
-  animeScroll(target6, 30, 4);
-  animeScroll(target7, 32, 4);
-  animeScroll(placa, 10, 4);
+function mudaOutdoor1(classe,num1,denominador,num2){
+    var offset = $(window).width()*num1/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll+offset > itemLeft && scroll+fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#outdoor").css("display", "none");
+        
+          }else{
+            $(this).removeClass(animationClass);
+              $("#outdoor").css("display", "block");
+          }
+     })
+
+}
+
+function mudaOutdoor2(classe,num1,denominador,num2){
+    var offset = $(window).width()*num1/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#outdoor2").css("display", "none");
+        
+          }else{
+            $(this).removeClass(animationClass);
+              $("#outdoor2").css("display", "block");
+          }
+     })
+
+}
+//FUNÇÕES QUE MUDAM PREDIO P/ HOLOGRAMA DA SESSAO3
+function mudaPredio1(classe,num1,denominador,num2){
+    var offset = $(window).width()*num1/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#predio1").css("display", "none");
+        
+          }else{
+            $(this).removeClass(animationClass);
+              $("#predio1").css("display", "block");
+          }
+     })
+
+}
+function mudaPredio2(classe,num,denominador,num2){
+    var offset = $(window).width()*num/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#predio2").css("display", "none");
+        
+          }else{
+            $(this).removeClass(animationClass);
+              $("#predio2").css("display", "block");
+          }
+     })
+
+}
+function mudaPredio3(classe,num1,denominador,num2){
+    var offset = $(window).width()*num1/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#predio3").css("display", "none");
+        
+          }else{
+            $(this).removeClass(animationClass);
+              $("#predio3").css("display", "block");
+          }
+     })
+
+}
+//FUNÇÃO MUDA PLACA PNG PARA GIF DA SESSAO3
+function mudaPlaca(classe,num1,denominador,num2){
+  var offset = $(window).width()*num1/denominador,
+    fim = $(window).width()*num2/denominador;
+    classe.each(function(){
+        var itemLeft = $(this).offset().left;
+        console.log(itemLeft);
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+            $("#placa").css("display", "none");
+
+          }else{
+            $(this).removeClass(animationClass);
+              $("#placa").css("display", "block");
+          }
+     })
+
+}
+ 
+
+  mudaOutdoor1(target,3.5,4,0.5);
+  animeScroll(target2, 1, 4);
+  animeScroll(target3, 3, 4);
+  animeScroll(target4, 6.5, 4);
+  mudaOutdoor2(target5, 10.5, 4,13.5);
+  mudaPredio1(target6,10,4,13.5);
+  mudaPlaca(target8,6.5,4,9);
+  mudaPredio2(target7, 15.5, 4,18);
+  mudaPredio3(target9, 19, 4,21);
+  
 }
