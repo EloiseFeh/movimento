@@ -2,8 +2,9 @@
 
 body {
   margin: 0;
-  background: #def3fd;
+  background: #207b74;
   font-family: "Orkney";
+  overflow: hidden;
 }
 
 /*esconder scrollbar*/
@@ -69,7 +70,8 @@ body {
   color: #339966;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 4%;
+  padding-left: 8%;
+  /*text-align: left;*/
 }
 
 .link:hover {
@@ -85,6 +87,7 @@ body {
   height: 100px;
   padding-right: 10%;
   padding-left: 5%;
+  padding-bottom: 2%;
 }
 /*PERSONAGENS SESSAO 1*/
 .luiziane{
