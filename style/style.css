@@ -495,4 +495,127 @@ body {
 .anime-start {
   transform: translate3d(0, 0, 0);
   opacity: 1;
+
+}
+
+
+/* MOVIMENTAÇÃO DAS NUVENS */
+
+.nuvem1 {
+  animation: posicionamento-1 4s infinite;
+  top: 30px;
+}
+
+.nuvem2 {
+  animation: posicionamento-2 4s infinite;
+  top: 80px;
+}
+
+.nuvem3 {
+  animation: posicionamento-3 3s infinite;
+  top: 10px;
+}
+
+.nuvem4 {
+  animation: posicionamento-4 3s infinite;
+  top: 60px;
+}
+
+.nuvem5 {
+  animation: posicionamento-5 3s infinite;
+  top: 40px;
+}
+
+.nuvem6 {
+  animation: posicionamento-6 3s infinite;
+  top: 40px;
+}
+
+.nuvem7 {
+  animation: posicionamento-7 3s infinite;
+  top: 40px;
+}
+
+.nuvem8 {
+  animation: posicionamento-8 3s infinite;
+  top: 40px;
+}
+
+.nuvens {
+  animation-timing-function: linear;
+  position: absolute;
+  animation-direction: alternate-reverse;
+  width: 180px;
+}
+
+@keyframes posicionamento-1 {
+  to {
+    left: 2900px;
+  }
+  from {
+    left: 2960px;
+  }
+}
+
+@keyframes posicionamento-2 {
+  to {
+    left: 3160px;
+  }
+  from {
+    left: 3060px;
+  }
+}
+
+@keyframes posicionamento-3 {
+  to {
+    left: 4000px;
+  }
+  from {
+    left: 4060px;
+  }
+}
+
+@keyframes posicionamento-4 {
+  to {
+    left: 5000px;
+  }
+  from {
+    left: 5060px;
+  }
+}
+
+@keyframes posicionamento-5 {
+  to {
+    left: 6000px;
+  }
+  from {
+    left: 6060px;
+  }
+}
+
+@keyframes posicionamento-6 {
+  to {
+    left: 7500px;
+  }
+  from {
+    left: 7560px;
+  }
+}
+
+@keyframes posicionamento-7 {
+  to {
+    left: 8200px;
+  }
+  from {
+    left: 8260px;
+  }
+}
+
+@keyframes posicionamento-8 {
+  to {
+    left: 10500px;
+  }
+  from {
+    left: 10560px;
+  }
 }
