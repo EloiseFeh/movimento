@@ -60,6 +60,12 @@ function movimentacao() {
     (target7 = $(".anime7")),
     (target8 = $(".anime-placa")),
     (target9 = $(".anime8")),
+    (target10 = $(".anime-fogos1")),
+    (target11 = $(".anime-fogos2")),
+    (target12 = $(".anime-fogos3")),
+    (target13 = $(".anime-meteoro")),
+    (target14 = $(".anime-palco")),
+    (target15 = $(".anime-manu")),
     (animationClass = "anime-start");
 
 
@@ -184,15 +190,93 @@ function mudaPlaca(classe,num1,denominador,num2){
 
 }
  
+/*FUNÇÃO DE ANIMAÇÃO DOS FOGOS*/
+
+ function animeFogos(classe, numerador, denominador){
+         var offset = $(window).width()*numerador/denominador; 
+  classe.each(function(){
+    var itemLeft = $(this).offset().left;
+    console.log(itemLeft);
+      if (scroll-offset > itemLeft) {
+          $(this).addClass(animationClass);
+
+    }
+    else{
+      $(this).removeClass(animationClass);
+    }
+  })
+}
+/*ANIMAÇÃO DOS TEXTOS*/
+
+ function animeTexto1(classe, numerador, denominador){
+         var offset = $(window).width()*numerador/denominador; 
+  classe.each(function(){
+    var itemLeft = $(this).offset().left;
+    console.log(itemLeft);
+      if (scroll-offset > itemLeft) {
+
+          $(this).addClass(animationClass);
+          $("#fogos1").css("display","none");
+
+    }
+  })
+}
+function animeTexto2(classe, numerador, denominador){
+         var offset = $(window).width()*numerador/denominador; 
+  classe.each(function(){
+    var itemLeft = $(this).offset().left;
+    console.log(itemLeft);
+      if (scroll-offset > itemLeft) {
+
+          $(this).addClass(animationClass);
+          $("#fogos2").css("display","none");
+
+    }
+  })
+}
+function animeTexto3(classe, numerador, denominador){
+         var offset = $(window).width()*numerador/denominador; 
+  classe.each(function(){
+    var itemLeft = $(this).offset().left;
+    console.log(itemLeft);
+      if (scroll-offset > itemLeft) {
+
+          $(this).addClass(animationClass);
+          $("#fogos3").css("display","none");
+
+    }
+  })
+}
+
+function animePalco(classe, numerador, denominador){
+         var offset = $(window).width()*numerador/denominador; 
+  classe.each(function(){
+    var itemLeft = $(this).offset().left;
+    console.log(itemLeft);
+      if (scroll-offset > itemLeft) {
+
+          $(this).addClass(animationClass);
+          $("#meteoro").css("display","none");
+
+    }
+  })
+}
+ 
 
   mudaOutdoor1(target,3.5,4,0.5);
-  animeScroll(target2, 1, 4);
-  animeScroll(target3, 3, 4);
-  animeScroll(target4, 6.5, 4);
+  setTimeout(function(){animeTexto1(target2,1,4);}, 2150);
+  animeFogos(target10, 1, 4);
+  setTimeout(function(){animeTexto2(target3,3,4);}, 2150);
+  animeFogos(target11, 3, 4);
+  setTimeout(function(){animeTexto3(target4,6.5,4);}, 2150);
+  animeFogos(target12, 6.5, 4);
   mudaOutdoor2(target5, 10.5, 4,13.5);
   mudaPredio1(target6,10,4,13.5);
   mudaPlaca(target8,6.5,4,9);
   mudaPredio2(target7, 15.5, 4,18);
   mudaPredio3(target9, 19, 4,21);
+  animeScroll(target13,19,4);
+  setTimeout(function(){animePalco(target14,19,4);}, 3000);
+  setTimeout(function(){animeScroll(target15,19,4);}, 3000);
   
 }

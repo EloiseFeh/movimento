@@ -134,6 +134,14 @@ body {
     background-repeat: no-repeat;
 
 }
+.manu{
+    position: absolute;
+    left: -162px;
+    top: calc(101vh - 231px);
+    width: auto;
+    height: 94px;
+
+}
 .ciclistas{
     position: absolute;
     left: 10739px;
@@ -225,6 +233,33 @@ body {
 
 
 /*FOGOS*/
+.fogos1{
+    position: absolute;
+    height: 483px;
+    left: -2435px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.fogos2{
+    position: absolute;
+    height: 483px;
+    left: -2077px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.fogos3{
+    position: absolute;
+    height: 483px;
+    left: -1515px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
 
 /*TEXTOS SERRILHADOS*/
 .texto1{
@@ -311,29 +346,45 @@ body {
 /*HOLOGRAMAS*/
 .holograma1 {
     position: absolute;
-    left: -2014px;
-    top: calc(100vh - 650px);
+    left: -1987px;
+    top: calc(100vh - 586px);
     width: auto;
-    height: 575px;
+    height: 509px;
 }
 .holograma2 {
     position: absolute;
-    left: -1261px;
-    top: calc(100vh - 648px);
+    left: -1090px;
+    top: calc(100vh - 616px);
     width: auto;
-    height: 610px;
+    height: 539px;
 }
 .holograma3 {
     position: absolute;
-    left: -753px;
-    top: calc(100vh - 623px);
+    left: -596px;
+    top: calc(100vh - 576px);
     width: auto;
-    height: 585px;
+    height: 499px;
 }
 
 /*METEORO*/
+.meteoro{
+    position: absolute;
+    left: -348px;
+    top: calc(100vh - 491px);
+    width: auto;
+    height: 452px;
+
+}
 
 /*PALCO*/
+.palco{
+   position: absolute;
+    left: -226px;
+    top: calc(100vh - 361px);
+    width: auto;
+    height: 294px;
+
+}
 
 
 .show {
@@ -400,6 +451,42 @@ body {
   transition: 0.3s;
 }
 .anime-placa{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos1{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos2{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos3{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-meteoro{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-palco{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-manu{
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
