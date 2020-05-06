@@ -34,7 +34,7 @@ html {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: calc(100vh - 615px);
+  top: calc(100vh - 620px);
   left: calc(100vw - 1100px);
 }
 
@@ -68,9 +68,9 @@ html {
   color: #3c5a67;
   position: absolute;
   right: 5vw;
-  top: 20vh;
-  width: calc(100vw - 1080px); 
-  height: 60%;
+  top: 22vh;
+  width: calc(100vw - 1080px);
+  height: 57%;
   border-radius: 30px;
   box-shadow: 0px 16px 24px rgba(52, 60, 88, 0.4);
   padding: 10px 20px;
