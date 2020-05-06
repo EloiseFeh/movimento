@@ -34,7 +34,7 @@ html {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: calc(100vh - 620px);
+  top: calc(100vh - 630px);
   left: calc(100vw - 1100px);
 }
 
