@@ -273,6 +273,7 @@ function animeManu(classe, numerador, denominador){
     }
   })
 }
+
  
 
   mudaOutdoor1(target,3.5,4,0.5);
@@ -290,5 +291,5 @@ function animeManu(classe, numerador, denominador){
   animeScroll(target13,19,4);
   setTimeout(function(){animePalco(target14,19,4);}, 3000);
   setTimeout(function(){animeManu(target15,19,4);}, 3000);
-  
+
 }
