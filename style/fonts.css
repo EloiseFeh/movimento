@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Orkney";
+  src: url("../fonts/orkney-regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: "Orkney";
+  src: url("../fonts/orkney-light.otf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: "Orkney";
+  src: url("../fonts/orkney-medium.otf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+   font-family: "Orkney";
+  src: url("../fonts/orkney-bold.otf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}

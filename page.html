@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Movimento</title>
+    <link rel="icon" href="imgs/lancet.png" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery.modal.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/balloon-css/balloon.min.css"
+    />
+    <script src="js/main-info.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/jquery.modal.min.js"></script>
+  </head>
+  <body>
+    <div id="lancet" style="background-image: url('imgs/ciclista.gif')"></div>
+    <div id="outer-wrapper" onscroll="movimentacao()">
+      <div class="wrapper">
+        <!-- SESSÃO - INTRODUÇÃO -->
+        <img class="tutorial-img" src="imgs/tutorial.gif" />
+        <img class="background" src="./imgs/bg/intro.png" />
+
+        <!-- SESSÃO - Nº 1 -->
+        <!-- PERSONAGENS-->
+        <a href="#ex1" rel="modal:open">
+        <div
+          class="luiziane"
+          id="luiziane"
+          style="background-image: url('imgs/personagens/Luiziane.png')"
+        ></div>
+      </a>
+        <div
+          class="laerte"
+          id="laerte"
+          style="background-image: url('imgs/personagens/Laerte.png')"
+        ></div>
+        <div
+          class="rodiney"
+          id="rodiney"
+          style="background-image: url('imgs/personagens/Rodiney.png')"
+        ></div>
+        <div
+          class="glaucyanyh"
+          id="glaucyanyh"
+          style="background-image: url('imgs/personagens/Glaucyanyh.png')"
+        ></div>
+        <!--FIM DOS PERSONAGENS DA SESSAO 1-->
+      <!--CENÁRIO SESSAO 1-->
+        <div
+          class="bandeira"
+          id="bandeira"
+          style="background-image: url('imgs/cenarioSessao1/bandeira.png')"
+        ></div>
+        <div
+          class="passaro"
+          style="background-image: url('imgs/cenarioSessao1/Passarogif.gif')"
+        ></div>
+        <div
+          class="passarin"
+          style="background-image: url('imgs/cenarioSessao1/Passaringif.gif')"
+        ></div>
+        <img src="./imgs/bg/s1.png" class="background" />
+        <!--FIM CENÁRIO SESSAO 1-->
+
+        <!-- inicio do pop-up de dialogo -->
+
+        <div id="ex1" class="modal">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>Olá! Tudo bem?</p>
+
+            </div>
+          </div>
+          
+          <a class="link" href="#pessoa2" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="pessoa2" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Pessoa:</h3>
+              <p>
+                Mais ou menos. Ultimamente estou sentindo muita dor lombar.
+              </p>
+
+             
+            </div>
+
+            <img class="dialogo-img" src="imgs/mulher1.png" />
+          </div>
+          
+          <a class="link" href="#ex1" rel="modal:open">Anterior</a>
+          <a class="link" href="#lancet2" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div id="lancet2" class="modal">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>Você tem que praticar a Saúde Positiva.</p>
+
+            </div>
+          </div>
+        
+          <a class="link" href="#pessoa2" rel="modal:open">Anterior</a>
+          <a class="link" href="#pessoa3" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="pessoa3" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Pessoa:</h3>
+              <p>Mas o que é Saúde Positiva, Lancet?</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/mulher1.png" />
+          </div>
+          
+          <a class="link" href="#lancet2" rel="modal:open">Anterior</a>
+          <a class="link" href="#lancet3" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="lancet3" style="display:none;">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>
+                Saúde Positiva é a habilidade de adaptar-se e se auto gerenciar,
+                considerando desafios sociais, físicos, e emocionais.
+              </p>
+            </div>
+          </div>
+
+          <a class="link" href="#pessoa3" rel="modal:open">Anterior</a>
+          <a class="link" href="#pessoa4" rel="modal:open">Próximo</a>
+      
+        </div>
+
+        <div class="modal" id="pessoa4" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Pessoa:</h3>
+              <p>E qual o seu benefício?</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/mulher1.png" />
+          </div>
+          
+          <a class="link" href="#lancet3" rel="modal:open">Anterior</a>
+          <a class="link" href="#lancet4" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="lancet4" style="display:none;">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>
+                Ela promove alternativas a curas e uma vida de alta qualidade e
+                significado para quem possui dor lombar persistente, gerando uma
+                mudança de expectativa e funcionalidade.
+              </p>
+              <p>
+                A abordagem para dor lombar deve ser ativa, de forma que lida
+                com um problema crônico de saúde por meio de estratégias auto
+                executadas e aprender a receber cuidado quando necessário.
+              </p>
+              <p>
+                As intervenções ocupacionais também são necessárias, para
+                reforçar as pessoas ao seu redor que você pode conviver com a
+                dor e que ela não significa lesão em busca de tratamento.
+              </p>
+
+            </div>
+          </div>
+
+          <a class="link" href="#pessoa4" rel="modal:open">Anterior</a>
+          <a class="link" href="#pessoa5" rel="modal:open">Próximo</a>
+
+        </div>
+
+        <div class="modal" id="pessoa5" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Pessoa:</h3>
+              <p>
+                Então eu posso praticar minhas atividades diárias normalmente?
+              </p>
+
+            </div>
+
+            <img class="dialogo-img" src="imgs/mulher1.png" />
+          </div>
+
+          <a class="link" href="#lancet4" rel="modal:open">Anterior</a>
+          <a class="link" href="#lancet5" rel="modal:open">Próximo</a>
+
+        </div>
+
+        <div class="modal" id="lancet5" style="display:none;">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>
+                Sim. O descanso na cama pode atrasar a recuperação da dor nas
+                costas, por isso, é importante se manter ativo.
+              </p>
+              <p>
+                O retorno precoce à atividade normal e o trabalho aumentam a
+                velocidade de recuperação.
+              </p>
+              <p>
+                A dor nem sempre é igual a lesão, especialmente no caso de dor a
+                longo prazo.
+              </p>
+              
+            </div>
+          </div>
+
+          <a class="link" href="#pessoa5" rel="modal:open">Anterior</a>
+          <a class="link" href="#pessoa6" rel="modal:open">Próximo</a>
+
+        </div>
+
+        <div class="modal" id="pessoa6" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Pessoa:</h3>
+              <p>Então a dor não impede ter uma vida saudável e produtiva?</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/mulher1.png" />
+          </div>
+
+          <a class="link" href="#lancet5" rel="modal:open">Anterior</a>
+          <a class="link" href="#lancet6" rel="modal:open">Próximo</a>
+
+        </div>
+
+        <div class="modal" id="lancet6" style="display:none;">
+          <div class="dialogo">
+            <img class="dialogo-img" src="imgs/lancet.png" />
+
+            <div class="texto">
+              <h3>Lancet:</h3>
+              <p>Exatamente!</p>
+              <p>
+                Para aqueles que acham difícil retomar a atividade, há programas
+                disponíveis para ajudar nos centros de saúde e locais de
+                trabalho.
+              </p>
+            </div>
+          </div>
+
+          <a class="link" href="#pessoa6" rel="modal:open">Anterior</a>
+          <a class="link" href="#" rel="modal:open">Encerrar </a>
+
+        </div>
+
+        <!-- Fim do Diálogo -->
+
+        <!-- <div class="s2"></div> </a> -->
+        <img src="./imgs/bg/s2.png" class="background" />
+        
+        <!--PLACA PEQUENA "IMPORTANTE LEMBRAR"-->
+        <img class="importante1" src="imgs/outdoors1/importante1.png" id="outdoor">
+          <div class="outdoor1">
+              <section class="anime">
+                <img id="outdoor11" class="outdoor11" src="imgs/outdoors1/outdoor11.png" onclick="trocar1()" alt="outdoor11">
+              </section>
+            </div>
+        <!--FIM DOS OUTDOORS 1-->
+
+        <!--FOGOS-->
+        <section class="anime-fogos1">
+
+            <div id="fogos1" class="fogos1" style="background-image: url('imgs/efeitoVisual/fogosGif.gif')"></div>
+
+        </section>
+
+        <section class="anime-fogos2">
+
+            <div id="fogos2" class="fogos2" style="background-image: url('imgs/efeitoVisual/fogos2.gif')"></div>
+
+        </section>
+        <section class="anime-fogos3">
+
+            <div id="fogos3" class="fogos3" style="background-image: url('imgs/efeitoVisual/fogos3.gif')"></div>
+
+        </section>
+        <!--FIM DOS FOGOS-->
+
+        <!--INICIO DOS TEXTOS SERRILHADOS-->
+
+        <section class="anime2">
+          <div
+            class="texto1"
+            style="background-image: url('imgs/textos/texto1.png')"
+          ></div>
+        </section>
+
+        <section class="anime3">
+          <div
+            class="texto2"
+            style="background-image: url('imgs/textos/texto2.png')"
+          ></div>
+        </section>
+
+        <section class="anime4">
+          <div
+            class="texto3"
+            style="background-image: url('imgs/textos/texto3.png')"
+          ></div>
+        </section>
+        <!--FIM DOS TEXTOS SERRILHADOS-->
+        <!--OUTDOOR 2-->
+        <img class="importante2" src="imgs/outdoors2/importante2.png" id="outdoor2">
+          <section class="anime5">
+            <img
+              class="outdoor21"
+              src="imgs/outdoors2/outdoor21.png"
+              id="outdoor21"
+              alt="outdoor21"
+              onclick="trocar2()"
+            />
+          </section>
+
+        <!-- SESSÃO - Nº 3 -->
+        <img src="./imgs/bg/s3.png" class="background" />
+        <!--PLACA DO INICIO DA SESSAO 3-->
+
+        <img src="imgs/placas/placa.png" id="placa" class="placa">
+        <section class="anime-placa">
+          <img src="imgs/placas/sessao3.gif" id="placagif" class="placagif">
+        </section>
+
+          <img id="predio1" class="predio1" src="imgs/predios/Predio1.png">
+          <section class="anime6">
+              <img class="holograma1" src="imgs/hologramas/Holograma1.png" />
+          </section>
+
+          <img id="predio2" class="predio2" src="imgs/predios/Predio2.png">
+          <section class="anime7">
+            <img class="holograma2" src="imgs/hologramas/Holograma2.png" />
+          </section>
+
+          <img id="predio3" class="predio3" src="imgs/predios/Predio3.png">
+          <section class="anime8">
+            <img class="holograma3" src="imgs/hologramas/Holograma3.png" />
+          </section>
+
+
+
+        <!-- SESSÃO - Nº 4 -->
+        <img src="./imgs/bg/s4.png" class="background" />
+        <!--METORO-->
+        <section class="anime-meteoro">
+
+            <img id="meteoro" class="meteoro" src="imgs/efeitoVisual/meteoro.gif">
+
+        </section>
+
+        <!--PALCO-->
+       <section class="anime-palco">
+
+            <a href="#manu1" rel="modal:open">
+              <img class="palco" src="imgs/efeitoVisual/palco.png">
+            </a>
+        </section>
+
+        <!--MANU-->
+
+          <section class="anime-manu">
+
+            <a href="#manu1" rel="modal:open">
+              <img class="manu" src="imgs/personagens/Manu.png">
+            </a>
+        </section>
+
+        <!-- INICIO POPUP SESSÃO 4 -->
+
+         <div id="manu1" class="modal">
+          <div class="dialogo">
+
+            <div class="texto">
+              <h3>Manu:</h3>
+              <p>Precisamos de abordagens que encorajem o entendimento dos fatores que contribuem para ocorrência e persistência de dor lombar!</p>
+
+            </div>
+
+             <img class="dialogo-img" src="imgs/Manu.png" />
+
+          </div>
+          
+          <a class="link" href="#manu2" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="manu2" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Manu:</h3>
+              <p>Que eduquem e suportem o auto gerenciamento da dor!</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Manu.png" />
+          </div>
+          
+          <a class="link" href="#manu1" rel="modal:open">Anterior</a>
+          <a class="link" href="#manu3" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="manu3" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Manu:</h3>
+              <p>E que sejam seguras e eficientes e estimulem o estilo de vida ativo como enfrentamento da condição!</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Manu.png" />
+          </div>
+          
+          <a class="link" href="#manu2" rel="modal:open">Anterior</a>
+          <a class="link" href="#" rel="modal:open">Encerar</a>
+        
+        </div>
+
+        <!-- FIM POPUP SESSÃO 4 -->
+
+        <!-- SESSÃO - Nº 5 -->
+        <img src="./imgs/bg/s5.png" class="background" />
+
+        <!--CICLISTAS-->
+        <a href="#ciclistas1" rel="modal:open">
+          <img src="imgs/personagens/Ciclistas.gif" id="ciclistas" class="ciclistas"> 
+        </a>
+        <!-- INICIO DIALOGO CICLISTAS -->
+
+        <div id="ciclistas1" class="modal">
+          <div class="dialogo">
+            
+
+            <div class="texto">
+              <h3>Ciclista:</h3>
+              <p>Use a noção de saúde positiva, se adaptando e se auto gerenciando diante de desafios sociais, físicos e emocionais para o tratamento de lombalgia inespecífica.</p>
+
+            </div>
+
+            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+
+          </div>
+          
+          <a class="link" href="#ciclistas2" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="ciclistas2" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Ciclista:</h3>
+              <p>Evite tratamentos prejudiciais e inúteis adotando uma estrutura semelhante à usada na regulamentação de medicamentos.</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+            
+          </div>
+          
+          <a class="link" href="#ciclistas1" rel="modal:open">Anterior</a>
+          <a class="link" href="#ciclistas3" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="ciclistas3" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Ciclista:</h3>
+              <p> Inclua apenas tratamentos em pacotes de reembolso público se as evidências mostrarem que são seguros, eficazes e econômicos!</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+            
+          </div>
+          
+          <a class="link" href="#ciclistas2" rel="modal:open">Anterior</a>
+          <a class="link" href="#ciclistas4" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="ciclistas4" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Ciclista:</h3>
+              <p>Compreender as causas, prognósticos e eficácia de diferentes tratamentos para lombalgia, além de lidar com os modelos de atendimento fragmentados e desatualizados.</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+            
+          </div>
+          
+          <a class="link" href="#ciclistas3" rel="modal:open">Anterior</a>
+          <a class="link" href="#ciclistas5" rel="modal:open">Próximo</a>
+        
+        </div>
+
+        <div class="modal" id="ciclistas5" style="display:none;">
+          <div class="dialogo">
+            <div class="texto">
+              <h3>Ciclista:</h3>
+              <p>Políticas, saúde pública, práticas de assistência à saúde, serviços sociais e locais de trabalho devem enfrentar conjuntamente a dor lomabar em países de baixa e média renda.</p>
+            </div>
+
+            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+            
+          </div>
+          
+          <a class="link" href="#ciclistas4" rel="modal:open">Anterior</a>
+          <a class="link" href="#" rel="modal:open">Encerrar</a>
+        
+        </div>
+
+        <!-- FIM DIALOGO CICLISTAS -->
+
+        <!-- NUVENS -->
+        <img class="nuvens nuvem1" src="./imgs/nuvens/nuvem-1.png" />
+        <img class="nuvens nuvem2" src="./imgs/nuvens/nuvem-1.png" />
+        <img class="nuvens nuvem3" src="./imgs/nuvens/nuvem-2.png" />
+        <img class="nuvens nuvem4" src="./imgs/nuvens/nuvem-3.png" />
+        <img class="nuvens nuvem5" src="./imgs/nuvens/nuvem-4.png" />
+        <img class="nuvens nuvem6" src="./imgs/nuvens/nuvem-3.png" />
+        <img class="nuvens nuvem7" src="./imgs/nuvens/nuvem-1.png" />
+        <img class="nuvens nuvem8" src="./imgs/nuvens/nuvem-4.png" />
+
+      </div>
+    </div>
+  </body>
+</html>

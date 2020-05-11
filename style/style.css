@@ -1,0 +1,621 @@
+@import "fonts.css";
+
+body {
+  margin: 0;
+  background: #DEF3FD;
+  font-family: "Orkney";
+  overflow: hidden;
+}
+
+/*esconder scrollbar*/
+.outer-wrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  height: 630px;
+  position: relative;
+  top: calc(100vh - 630px);
+  z-index: -2;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+#outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+#lancet {
+  position: absolute;
+  left: 20%;
+  top: 77%;
+  height: auto;
+  width: 148px;
+  z-index: 1;
+  padding-bottom: 15%;
+  background-size: 100% !important;
+  background-repeat: no-repeat;
+}
+
+.tutorial-img {
+  height: auto;
+  width: 220px;
+  top: 10%;
+  position: absolute;
+  left: 50px;
+}
+.link {
+  color: #339966;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 8%;
+  /*text-align: left;*/
+}
+
+.link:hover {
+  color: #207b74;
+}
+.dialogo {
+  display: flex !important;
+  align-items: center;
+}
+
+.dialogo-img {
+  width: 100px;
+  height: 100px;
+  padding-right: 10%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+/*PERSONAGENS SESSAO 1*/
+.luiziane{
+    position: absolute;
+    left: 1305px;
+    top: calc(100vh - 165px);
+    height: 629px;
+    width: 59px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.laerte{
+    position: absolute;
+    left: 1677px;
+    top: calc(100vh - 179px);
+    height: 629px;
+    width: 41px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.rodiney{
+    position: absolute;
+    left: 1794px;
+    top: calc(100vh - 183px);
+    height: 629px;
+    width: 37px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.glaucyanyh{
+    position: absolute;
+    left: 2092px;
+    top: calc(100vh - 165px);
+    height: 629px;
+    width: 40px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+.manu{
+    position: absolute;
+    left: -162px;
+    top: calc(101vh - 231px);
+    width: auto;
+    height: 94px;
+
+}
+.ciclistas{
+    position: absolute;
+    left: 10739px;
+    top: calc(100vh - 165px);
+    height: 150px;
+    width: auto;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+/*CENARIO SESSAO 1*/
+
+.bandeira {
+    position: absolute;
+    left: 1490px;
+    top: calc(100vh - 545px);
+    height: 629px;
+    width: 352px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+.passaro {
+    position: absolute;
+    height: 67px;
+    left: 1698px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.passarin {
+      position: absolute;
+    height: 67px;
+    left: 1656px;
+    top: calc(100vh - 116px);
+    background-size: 100% !important;
+    width: 45px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+/*MODAL INTERATIVO SESSAO1*/
+
+.s2 {
+    position: absolute;
+    left: 1302px;
+    top: calc(100vh - 169px);
+    height: 106px;
+    float: right;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    width: 60px;
+    z-index: 1;
+}
+
+/*PLACAS IMPORTANTE LEMBRAR*/
+
+.importante1{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 258px);
+    left: 2869px;
+
+}
+.importante2{
+    width: 300px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 294px);
+    left: 5225px;
+
+}
+
+
+/*OUTDOORS1*/
+.outdoor11 {
+    position: absolute;
+    left: -3226px;
+    top: calc(100vh - 515px);
+    width: auto;
+    height: 467px;
+}
+
+
+
+/*FOGOS*/
+.fogos1{
+    position: absolute;
+    height: 483px;
+    left: -2435px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.fogos2{
+    position: absolute;
+    height: 483px;
+    left: -2077px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.fogos3{
+    position: absolute;
+    height: 483px;
+    left: -1515px;
+    top: calc(100vh - 374px);
+    width: 430px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
+/*TEXTOS SERRILHADOS*/
+.texto1{
+    position: absolute;
+    height: 483px;
+    left: -2232px;
+    top: calc(100vh - 574px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto2 {
+    position: absolute;
+    height: 483px;
+    left: -1870px;
+    top: calc(100vh - 476px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+.texto3 {
+    position: absolute;
+    height: 483px;
+    left: -1309px;
+    top: calc(100vh - 474px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
+
+/*OUTDOORS2*/
+.outdoor21 {
+    position: absolute;
+    left: -725px;
+    top: calc(100vh - 539px);
+    width: auto;
+    height: 490px;
+}
+
+/*PLACA INTRODUÇÃO SESSAO 3*/
+.placa {
+    width: auto;
+    position: absolute;
+    height: 367px;
+    top: calc(100vh - 473px);
+    left: 5947px;
+
+}
+.placagif{
+    width: auto;
+    position: absolute;
+    height: 367px;
+    top: calc(100vh - 473px);
+    left: -2471px;
+
+}
+
+
+
+/*PREDIOS*/
+.predio1{
+    width: auto;
+    position: absolute;
+    height: 299px;
+    top: calc(100vh - 383px);
+    left: 6310px;
+  }
+  .predio2{
+    width: auto;
+    position: absolute;
+    height: 281px;
+    top: calc(100vh - 365px);
+    left: 7205px;
+  }
+  .predio3{
+    width: auto;
+    position: absolute;
+    height: 492px;
+    top: calc(100vh - 576px);
+    left: 7805px;
+  }
+
+/*HOLOGRAMAS*/
+.holograma1 {
+    position: absolute;
+    left: -1987px;
+    top: calc(100vh - 586px);
+    width: auto;
+    height: 509px;
+}
+.holograma2 {
+    position: absolute;
+    left: -1090px;
+    top: calc(100vh - 616px);
+    width: auto;
+    height: 539px;
+}
+.holograma3 {
+    position: absolute;
+    left: -596px;
+    top: calc(100vh - 576px);
+    width: auto;
+    height: 499px;
+}
+
+/*METEORO*/
+.meteoro{
+    position: absolute;
+    left: -348px;
+    top: calc(100vh - 491px);
+    width: auto;
+    height: 452px;
+
+}
+
+/*PALCO*/
+.palco{
+   position: absolute;
+    left: -226px;
+    top: calc(100vh - 361px);
+    width: auto;
+    height: 294px;
+
+}
+
+
+.show {
+  z-index: 9999;
+  position: absolute;
+  right: 0;
+  top: 77%;
+  width: 0.6%;
+  height: 0;
+  padding-bottom: 0.64%;
+  float: right;
+  background-color: transparent;
+  border-color: black;
+  border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+/*ANIMAÇÕES*/
+.anime {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime2 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime3 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime4 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime5 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime6 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime7 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime8 {
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+}
+.anime-placa{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos1{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos2{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-fogos3{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-meteoro{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-palco{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-manu{
+  transform: translate3d(0, +50px, 0);
+  opacity: 0;
+  transition: 0.3s;
+
+}
+.anime-start {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+
+}
+
+
+/* MOVIMENTAÇÃO DAS NUVENS */
+
+.nuvem1 {
+  animation: posicionamento-1 4s infinite;
+  top: 30px;
+}
+
+.nuvem2 {
+  animation: posicionamento-2 4s infinite;
+  top: 80px;
+}
+
+.nuvem3 {
+  animation: posicionamento-3 3s infinite;
+  top: 10px;
+}
+
+.nuvem4 {
+  animation: posicionamento-4 3s infinite;
+  top: 60px;
+}
+
+.nuvem5 {
+  animation: posicionamento-5 3s infinite;
+  top: 40px;
+}
+
+.nuvem6 {
+  animation: posicionamento-6 3s infinite;
+  top: 40px;
+}
+
+.nuvem7 {
+  animation: posicionamento-7 3s infinite;
+  top: 40px;
+}
+
+.nuvem8 {
+  animation: posicionamento-8 3s infinite;
+  top: 40px;
+}
+
+.nuvens {
+  animation-timing-function: linear;
+  position: absolute;
+  animation-direction: alternate-reverse;
+  width: 180px;
+}
+
+@keyframes posicionamento-1 {
+  to {
+    left: 2900px;
+  }
+  from {
+    left: 2960px;
+  }
+}
+
+@keyframes posicionamento-2 {
+  to {
+    left: 3160px;
+  }
+  from {
+    left: 3060px;
+  }
+}
+
+@keyframes posicionamento-3 {
+  to {
+    left: 4000px;
+  }
+  from {
+    left: 4060px;
+  }
+}
+
+@keyframes posicionamento-4 {
+  to {
+    left: 5000px;
+  }
+  from {
+    left: 5060px;
+  }
+}
+
+@keyframes posicionamento-5 {
+  to {
+    left: 6000px;
+  }
+  from {
+    left: 6060px;
+  }
+}
+
+@keyframes posicionamento-6 {
+  to {
+    left: 7500px;
+  }
+  from {
+    left: 7560px;
+  }
+}
+
+@keyframes posicionamento-7 {
+  to {
+    left: 8200px;
+  }
+  from {
+    left: 8260px;
+  }
+}
+
+@keyframes posicionamento-8 {
+  to {
+    left: 10500px;
+  }
+  from {
+    left: 10560px;
+  }
+}

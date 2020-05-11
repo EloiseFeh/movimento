@@ -1,0 +1,159 @@
+/*Documento exclusivo para a edição da página de Login*/
+
+/*
+==================
+importando arquivo com fonts
+=================*/
+@import "fonts.css";
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  font-family: "Orkney";
+  background: #e5fcec;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+.content {
+  background-image: url(../imgs/bg/login.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.headerPage {
+  color: #2c464b;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100vh - 630px);
+  left: calc(100vw - 1100px);
+}
+
+#title {
+  margin-bottom: 0 !important;
+  font-weight: 100;
+}
+
+#resume {
+  padding: 0;
+  font-style: medium;
+  margin-top: 5px;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  top: calc(100vh - 90px);
+  left: calc(100vw - 1100px);
+  /*top: calc(100vh -625px);*/
+}
+
+.items-item {
+  padding: 0 30px;
+}
+
+.Form-div {
+  font-family: "Orkney";
+  background-color: #e1edd5;
+  color: #3c5a67;
+  position: absolute;
+  right: 5vw;
+  top: 22vh;
+  width: calc(100vw - 1080px);
+  height: 57%;
+  border-radius: 30px;
+  box-shadow: 0px 16px 24px rgba(52, 60, 88, 0.4);
+  padding: 10px 20px;
+}
+
+.headerLog {
+  /*padding-left: 20px;*/
+  font-family: "Orkney";
+  margin-bottom: 15%;
+}
+.form {
+  /*align-items: center;*/
+  /*padding: 0 20px;*/
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+#submit {
+  font-family: "Orkney";
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #3c5a67;
+  height: 40px;
+  width: 100%;
+  border-radius: 25px;
+  border-style: none;
+}
+
+#chave {
+  width: 92%;
+  border-style: none;
+  height: 40px;
+  border-radius: 30px;
+  color: #757575;
+  font-size: 18px;
+  padding: 0 0 0 15px;
+}
+
+#chave:focus {
+  outline: none;
+  border: 2px solid #81b3ed;
+}
+/*
+==================
+EDIÇÃo DO PLACEHOLDER
+=================*/
+
+::-webkit-input-placeholder {
+  color: #757575;
+  font-size: 18px;
+}
+::-moz-placeholder {
+  color: #757575;
+  font-size: 18px;
+}
+:-ms-input-placeholder {
+  color: #757575;
+  font-size: 18px;
+}
+::placeholder {
+  color: #757575;
+  font-size: 18px;
+}
+
+/*
+==================
+FIM
+=================*/
+
+#label {
+  padding-bottom: 22px;
+  font-size: 18px;
+}
+
+#bemvindo {
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 7%;
+}
+
+#paracesso {
+  font-size: 18px;
+  font-weight: 600;
+}
