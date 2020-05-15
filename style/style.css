@@ -20,7 +20,7 @@ body {
   height: 630px;
   position: relative;
   top: calc(100vh - 630px);
-  z-index: -2;
+  z-index: -3;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -546,6 +546,7 @@ body {
   position: absolute;
   animation-direction: alternate-reverse;
   width: 180px;
+  z-index: -2;
 }
 
 @keyframes posicionamento-1 {
