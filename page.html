@@ -20,12 +20,24 @@
     <div id="outer-wrapper" onscroll="movimentacao()">
       <div class="wrapper">
         <!-- SESSÃO - INTRODUÇÃO -->
-        <img class="tutorial-img" src="imgs/tutorial.gif" />
+        <a href="index.html">
+          <div
+            class="retorno"
+            id="retorno"
+            style="background-image: url('imgs/elementos-cenario/retorno.png')"
+          ></div>
+       </a>
         <img class="background" src="./imgs/bg/intro.png" />
 
         <!-- SESSÃO - Nº 1 -->
         <!-- PERSONAGENS-->
+        
         <a href="#ex1" rel="modal:open">
+          <div
+          class="balao-luiziane"
+          id="balao-luiziane"
+          style="background-image: url('imgs/personagens/balao-luiziane.png')"
+        ></div>
         <div
           class="luiziane"
           id="luiziane"
@@ -33,14 +45,19 @@
         ></div>
       </a>
         <div
-          class="laerte"
-          id="laerte"
-          style="background-image: url('imgs/personagens/Laerte.png')"
+          class="balao-rodiney"
+          id="balao-rodiney"
+          style="background-image: url('imgs/personagens/balao-rodiney.png')"
         ></div>
         <div
           class="rodiney"
           id="rodiney"
           style="background-image: url('imgs/personagens/Rodiney.png')"
+        ></div>
+        <div
+          class="balao-glaucyanyh"
+          id="balao-glaucyanyh"
+          style="background-image: url('imgs/personagens/balao-glaucyanyh.png')"
         ></div>
         <div
           class="glaucyanyh"
@@ -52,15 +69,15 @@
         <div
           class="bandeira"
           id="bandeira"
-          style="background-image: url('imgs/cenarioSessao1/bandeira.png')"
+          style="background-image: url('imgs/elementos-cenario/bandeira.png')"
         ></div>
         <div
           class="passaro"
-          style="background-image: url('imgs/cenarioSessao1/Passarogif.gif')"
+          style="background-image: url('imgs/elementos-cenario/Passarogif.gif')"
         ></div>
         <div
           class="passarin"
-          style="background-image: url('imgs/cenarioSessao1/Passaringif.gif')"
+          style="background-image: url('imgs/elementos-cenario/Passaringif.gif')"
         ></div>
         <img src="./imgs/bg/s1.png" class="background" />
         <!--FIM CENÁRIO SESSAO 1-->
@@ -283,57 +300,45 @@
         <!--PLACA PEQUENA "IMPORTANTE LEMBRAR"-->
         <img class="importante1" src="imgs/outdoors1/importante1.png" id="outdoor">
           <div class="outdoor1">
-              <section class="anime">
+              <section class="anime-outdoor1">
                 <img id="outdoor11" class="outdoor11" src="imgs/outdoors1/outdoor11.png" onclick="trocar1()" alt="outdoor11">
               </section>
             </div>
         <!--FIM DOS OUTDOORS 1-->
 
-        <!--FOGOS-->
-        <section class="anime-fogos1">
-
-            <div id="fogos1" class="fogos1" style="background-image: url('imgs/efeitoVisual/fogosGif.gif')"></div>
-
-        </section>
-
-        <section class="anime-fogos2">
-
-            <div id="fogos2" class="fogos2" style="background-image: url('imgs/efeitoVisual/fogos2.gif')"></div>
-
-        </section>
-        <section class="anime-fogos3">
-
-            <div id="fogos3" class="fogos3" style="background-image: url('imgs/efeitoVisual/fogos3.gif')"></div>
-
-        </section>
-        <!--FIM DOS FOGOS-->
-
         <!--INICIO DOS TEXTOS SERRILHADOS-->
 
-        <section class="anime2">
+        <section class="anime-texto1">
           <div
             class="texto1"
             style="background-image: url('imgs/textos/texto1.png')"
           ></div>
         </section>
 
-        <section class="anime3">
+        <section class="anime-texto2">
           <div
             class="texto2"
             style="background-image: url('imgs/textos/texto2.png')"
           ></div>
         </section>
 
-        <section class="anime4">
+        <section class="anime-texto3">
           <div
             class="texto3"
             style="background-image: url('imgs/textos/texto3.png')"
           ></div>
         </section>
+
+        <section class="anime-texto4">
+          <div
+            class="texto4"
+            style="background-image: url('imgs/textos/texto4.png')"
+          ></div>
+        </section>
         <!--FIM DOS TEXTOS SERRILHADOS-->
         <!--OUTDOOR 2-->
         <img class="importante2" src="imgs/outdoors2/importante2.png" id="outdoor2">
-          <section class="anime5">
+          <section class="anime-outdoor2">
             <img
               class="outdoor21"
               src="imgs/outdoors2/outdoor21.png"
@@ -347,23 +352,18 @@
         <img src="./imgs/bg/s3.png" class="background" />
         <!--PLACA DO INICIO DA SESSAO 3-->
 
-        <img src="imgs/placas/placa.png" id="placa" class="placa">
-        <section class="anime-placa">
-          <img src="imgs/placas/sessao3.gif" id="placagif" class="placagif">
-        </section>
-
           <img id="predio1" class="predio1" src="imgs/predios/Predio1.png">
-          <section class="anime6">
+          <section class="anime-holograma1">
               <img class="holograma1" src="imgs/hologramas/Holograma1.png" />
           </section>
 
           <img id="predio2" class="predio2" src="imgs/predios/Predio2.png">
-          <section class="anime7">
+          <section class="anime-holograma2">
             <img class="holograma2" src="imgs/hologramas/Holograma2.png" />
           </section>
 
           <img id="predio3" class="predio3" src="imgs/predios/Predio3.png">
-          <section class="anime8">
+          <section class="anime-holograma3">
             <img class="holograma3" src="imgs/hologramas/Holograma3.png" />
           </section>
 
@@ -391,6 +391,11 @@
           <section class="anime-manu">
 
             <a href="#manu1" rel="modal:open">
+              <div
+                class="balao-manu"
+                id="balao-manu"
+                style="background-image: url('imgs/personagens/balao-manu.png')"
+              ></div>
               <img class="manu" src="imgs/personagens/Manu.png">
             </a>
         </section>
@@ -451,6 +456,11 @@
 
         <!--CICLISTAS-->
         <a href="#ciclistas1" rel="modal:open">
+          <div
+          class="balao-ciclista"
+          id="balao-ciclista"
+          style="background-image: url('imgs/personagens/balao-ciclista.png')"
+        ></div>
           <img src="imgs/personagens/Ciclistas.gif" id="ciclistas" class="ciclistas"> 
         </a>
         <!-- INICIO DIALOGO CICLISTAS -->

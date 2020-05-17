@@ -59,13 +59,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.tutorial-img {
-  height: auto;
-  width: 220px;
-  top: 10%;
-  position: absolute;
-  left: 50px;
-}
 .link {
   color: #339966;
   text-decoration: none;
@@ -89,12 +82,72 @@ body {
   padding-left: 5%;
   padding-bottom: 2%;
 }
+/*BALÕES DE INTERAÇÃO*/
+.balao-luiziane{
+    position: absolute;
+    left: 1263px;
+    top: calc(100vh - 217px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+}
+
+.balao-rodiney{
+    position: absolute;
+    left: 1745px;
+    top: calc(100vh - 240px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-glaucyanyh{
+    position: absolute;
+    left: 2025px;
+    top: calc(100vh - 215px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-ciclista{
+    position: absolute;
+    left: 10727px;
+    top: calc(100vh - 195px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
+
+.balao-manu{
+    position: absolute;
+    left: -219px;
+    top: calc(100vh - 280px);
+    height: 55px;
+    width: 61px;
+    z-index: 1;
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+
+}
 /*PERSONAGENS SESSAO 1*/
+
 .luiziane{
     position: absolute;
     left: 1305px;
     top: calc(100vh - 165px);
-    height: 629px;
+    height: 104px;
     width: 59px;
     z-index: 1;
     background-size: 100% !important;
@@ -125,9 +178,9 @@ body {
 }
 .glaucyanyh{
     position: absolute;
-    left: 2092px;
+    left: 2086px;
     top: calc(100vh - 165px);
-    height: 629px;
+    height: 104px;
     width: 40px;
     z-index: 1;
     background-size: 100% !important;
@@ -153,7 +206,7 @@ body {
     background-repeat: no-repeat;
 
 }
-/*CENARIO SESSAO 1*/
+/*ELEMENTOS DO CENARIO*/
 
 .bandeira {
     position: absolute;
@@ -165,6 +218,7 @@ body {
     background-size: 100% !important;
     background-repeat: no-repeat;
 }
+
 .passaro {
     position: absolute;
     height: 67px;
@@ -177,7 +231,7 @@ body {
 }
 
 .passarin {
-      position: absolute;
+    position: absolute;
     height: 67px;
     left: 1656px;
     top: calc(100vh - 116px);
@@ -186,6 +240,16 @@ body {
     background-repeat: no-repeat;
     z-index: 1;
 }
+.retorno{
+    position: absolute;
+    height: 41px;
+    left: 41px;
+    top: calc(100vh - 612px);
+    background-size: 100% !important;
+    width: 25px;
+    background-repeat: no-repeat;
+}
+
 /*MODAL INTERATIVO SESSAO1*/
 
 .s2 {
@@ -232,63 +296,45 @@ body {
 
 
 
-/*FOGOS*/
-.fogos1{
-    position: absolute;
-    height: 483px;
-    left: -2435px;
-    top: calc(100vh - 374px);
-    width: 430px;
-    background-repeat: no-repeat;
-    background-size: 100% !important;
-}
-.fogos2{
-    position: absolute;
-    height: 483px;
-    left: -2077px;
-    top: calc(100vh - 374px);
-    width: 430px;
-    background-repeat: no-repeat;
-    background-size: 100% !important;
-}
-.fogos3{
-    position: absolute;
-    height: 483px;
-    left: -1515px;
-    top: calc(100vh - 374px);
-    width: 430px;
-    background-repeat: no-repeat;
-    background-size: 100% !important;
-}
 
 /*TEXTOS SERRILHADOS*/
 .texto1{
     position: absolute;
-    height: 483px;
-    left: -2232px;
-    top: calc(100vh - 574px);
-    width: 403px;
+    height: 427px;
+    left: -2347px;
+    top: calc(100vh - 544px);
+    width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
 }
 .texto2 {
     position: absolute;
-    height: 483px;
-    left: -1870px;
-    top: calc(100vh - 476px);
-    width: 403px;
+    height: 413px;
+    left: -1941px;
+    top: calc(100vh - 544px);
+    width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
 }
 .texto3 {
     position: absolute;
-    height: 483px;
-    left: -1309px;
-    top: calc(100vh - 474px);
+    height: 422px;
+    left: -1526px;
+    top: calc(100vh - 552px);
     width: 403px;
     background-repeat: no-repeat;
     background-size: 100% !important;
 }
+.texto4 {
+    position: absolute;
+    height: 422px;
+    left: -1110px;
+    top: calc(100vh - 552px);
+    width: 403px;
+    background-repeat: no-repeat;
+    background-size: 100% !important;
+}
+
 
 
 /*OUTDOORS2*/
@@ -300,23 +346,6 @@ body {
     height: 490px;
 }
 
-/*PLACA INTRODUÇÃO SESSAO 3*/
-.placa {
-    width: auto;
-    position: absolute;
-    height: 367px;
-    top: calc(100vh - 473px);
-    left: 5947px;
-
-}
-.placagif{
-    width: auto;
-    position: absolute;
-    height: 367px;
-    top: calc(100vh - 473px);
-    left: -2471px;
-
-}
 
 
 
@@ -410,69 +439,50 @@ body {
 
 
 /*ANIMAÇÕES*/
-.anime {
+.anime-outdoor1 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime2 {
+.anime-texto1 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime3 {
+.anime-texto2 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime4 {
+.anime-texto3 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime5 {
+.anime-texto4 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime6 {
+.anime-outdoor2 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime7 {
+.anime-holograma1{
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime8 {
+.anime-holograma2 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
 }
-.anime-placa{
+.anime-holograma3 {
   transform: translate3d(0, +50px, 0);
   opacity: 0;
   transition: 0.3s;
-
-}
-.anime-fogos1{
-  transform: translate3d(0, +50px, 0);
-  opacity: 0;
-  transition: 0.3s;
-
-}
-.anime-fogos2{
-  transform: translate3d(0, +50px, 0);
-  opacity: 0;
-  transition: 0.3s;
-
-}
-.anime-fogos3{
-  transform: translate3d(0, +50px, 0);
-  opacity: 0;
-  transition: 0.3s;
-
 }
 .anime-meteoro{
   transform: translate3d(0, +50px, 0);
