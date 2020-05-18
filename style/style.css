@@ -132,14 +132,13 @@ body {
 
 .balao-manu{
     position: absolute;
-    left: -219px;
-    top: calc(100vh - 280px);
+    left: -227px;
+    top: calc(100vh - 281px);
     height: 55px;
     width: 61px;
     z-index: 1;
     background-size: 100% !important;
     background-repeat: no-repeat;
-
 }
 /*PERSONAGENS SESSAO 1*/
 
@@ -189,10 +188,10 @@ body {
 }
 .manu{
     position: absolute;
-    left: -162px;
-    top: calc(101vh - 231px);
+    left: -173px;
+    top: calc(101vh - 232px);
     width: auto;
-    height: 94px;
+    height: 84px;
 
 }
 .ciclistas{
@@ -206,18 +205,18 @@ body {
     background-repeat: no-repeat;
 
 }
-/*ELEMENTOS DO CENARIO*/
-
-.bandeira {
+.plateia{
     position: absolute;
-    left: 1490px;
-    top: calc(100vh - 545px);
-    height: 629px;
-    width: 352px;
+    left: 9010px;
+    top: calc(100vh - 160px);
+    height: 73px;
+    width: auto;
     z-index: 1;
     background-size: 100% !important;
     background-repeat: no-repeat;
+
 }
+/*ELEMENTOS DO CENARIO*/
 
 .passaro {
     position: absolute;
@@ -280,7 +279,7 @@ body {
     position: absolute;
     height: auto;
     top: calc(100vh - 294px);
-    left: 5225px;
+    left: 5298px;
 
 }
 
@@ -301,8 +300,8 @@ body {
 .texto1{
     position: absolute;
     height: 427px;
-    left: -2347px;
-    top: calc(100vh - 544px);
+    left: -2380px;
+    top: calc(100vh - 539px);
     width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -310,26 +309,26 @@ body {
 .texto2 {
     position: absolute;
     height: 413px;
-    left: -1941px;
-    top: calc(100vh - 544px);
+    left: -1947px;
+    top: calc(100vh - 539px);
     width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
 }
 .texto3 {
     position: absolute;
-    height: 422px;
-    left: -1526px;
-    top: calc(100vh - 552px);
+    height: 413px;
+    left: -1529px;
+    top: calc(100vh - 539px);
     width: 403px;
     background-repeat: no-repeat;
     background-size: 100% !important;
 }
 .texto4 {
     position: absolute;
-    height: 422px;
-    left: -1110px;
-    top: calc(100vh - 552px);
+    height: 409px;
+    left: -1118px;
+    top: calc(100vh - 539px);
     width: 403px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -346,51 +345,25 @@ body {
     height: 490px;
 }
 
-
-
-
-/*PREDIOS*/
-.predio1{
-    width: auto;
-    position: absolute;
-    height: 299px;
-    top: calc(100vh - 383px);
-    left: 6310px;
-  }
-  .predio2{
-    width: auto;
-    position: absolute;
-    height: 281px;
-    top: calc(100vh - 365px);
-    left: 7205px;
-  }
-  .predio3{
-    width: auto;
-    position: absolute;
-    height: 492px;
-    top: calc(100vh - 576px);
-    left: 7805px;
-  }
-
 /*HOLOGRAMAS*/
 .holograma1 {
     position: absolute;
-    left: -1987px;
-    top: calc(100vh - 586px);
+    left: -2420px;
+    top: calc(100vh - 605px);
     width: auto;
-    height: 509px;
+    height: 499px;
 }
 .holograma2 {
     position: absolute;
-    left: -1090px;
-    top: calc(100vh - 616px);
+    left: -1609px;
+    top: calc(100vh - 605px);
     width: auto;
-    height: 539px;
+    height: 502px;
 }
 .holograma3 {
     position: absolute;
-    left: -596px;
-    top: calc(100vh - 576px);
+    left: -1184px;
+    top: calc(100vh - 605px);
     width: auto;
     height: 499px;
 }
@@ -398,7 +371,7 @@ body {
 /*METEORO*/
 .meteoro{
     position: absolute;
-    left: -348px;
+    left: -400px;
     top: calc(100vh - 491px);
     width: auto;
     height: 452px;
@@ -407,11 +380,11 @@ body {
 
 /*PALCO*/
 .palco{
-   position: absolute;
-    left: -226px;
-    top: calc(100vh - 361px);
+    position: absolute;
+    left: -233px;
+    top: calc(100vh - 339px);
     width: auto;
-    height: 294px;
+    height: 253px;
 
 }
 

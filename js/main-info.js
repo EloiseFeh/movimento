@@ -106,8 +106,8 @@ function mudaOutdoor2(classe,num1,denominador,num2){
      })
 
 }
-//FUNÇÕES QUE MUDAM PREDIO P/ HOLOGRAMA DA SESSAO3
-function mudaPredio1(classe,num1,denominador,num2){
+//ANIMAÇÃO DOS HOLOGRAMAs DA SESSAO3
+function animeHolograma(classe,num1,denominador,num2){
     var offset = $(window).width()*num1/denominador,
     fim = $(window).width()*num2/denominador;
     classe.each(function(){
@@ -115,49 +115,14 @@ function mudaPredio1(classe,num1,denominador,num2){
         console.log(itemLeft);
           if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
             $(this).addClass(animationClass);
-            $("#predio1").css("display", "none");
         
           }else{
             $(this).removeClass(animationClass);
-              $("#predio1").css("display", "block");
           }
      })
 
 }
-function mudaPredio2(classe,num,denominador,num2){
-    var offset = $(window).width()*num/denominador,
-    fim = $(window).width()*num2/denominador;
-    classe.each(function(){
-        var itemLeft = $(this).offset().left;
-        console.log(itemLeft);
-          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
-            $(this).addClass(animationClass);
-            $("#predio2").css("display", "none");
-        
-          }else{
-            $(this).removeClass(animationClass);
-              $("#predio2").css("display", "block");
-          }
-     })
 
-}
-function mudaPredio3(classe,num1,denominador,num2){
-    var offset = $(window).width()*num1/denominador,
-    fim = $(window).width()*num2/denominador;
-    classe.each(function(){
-        var itemLeft = $(this).offset().left;
-        console.log(itemLeft);
-          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
-            $(this).addClass(animationClass);
-            $("#predio3").css("display", "none");
-        
-          }else{
-            $(this).removeClass(animationClass);
-              $("#predio3").css("display", "block");
-          }
-     })
-
-}
 /*ANIMAÇÃO DOS TEXTOS*/
 
  function animeTexto(classe, num1, denominador,num2){
@@ -220,15 +185,15 @@ function animeManu(classe, numerador, denominador){
 
   mudaOutdoor1(target,3.5,4,0.5);
   animeTexto(target2,0.5,4,3);
-  animeTexto(target3,3,4,6)
-  animeTexto(target4,6,4,7.5);
+  animeTexto(target3,3,4,5.5)
+  animeTexto(target4,5.5,4,7.5);
   animeTexto(target5,7.5,4,10.5);
   mudaOutdoor2(target6, 10.5, 4,13.5);
-  mudaPredio1(target7,10,4,13.5);
-  mudaPredio2(target8, 15.5, 4,18);
-  mudaPredio3(target9, 19, 4,21);
+  animeHolograma(target7,9,4,12);
+  animeHolograma(target8, 13, 4,15);
+  animeHolograma(target9, 15.5, 4,18);
   animeMeteoro(target10,19,4);
-  setTimeout(function(){animePalco(target11,19,4);}, 3000);
-  setTimeout(function(){animeManu(target12,19,4);}, 3000);
+  setTimeout(function(){animePalco(target11,19,4);}, 2600);
+  setTimeout(function(){animeManu(target12,19,4);}, 2600);
 
 }
