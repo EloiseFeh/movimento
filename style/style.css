@@ -235,6 +235,14 @@ body {
     background-repeat: no-repeat;
 
 }
+.menino{
+    width: 38px;
+    position: absolute;
+    height: auto;
+    top: calc(100vh - 153px);
+    left: 5765px;
+
+}
 /*ELEMENTOS DO CENARIO*/
 
 .passaro {
@@ -299,7 +307,7 @@ body {
     position: absolute;
     height: auto;
     top: calc(100vh - 294px);
-    left: 5298px;
+    left: 5332px;
 
 }
 
@@ -307,10 +315,10 @@ body {
 /*OUTDOORS1*/
 .outdoor11 {
     position: absolute;
-    left: -3222px;
-    top: calc(100vh - 405px);
+    left: -3262px;
+    top: calc(100vh - 471px);
     width: auto;
-    height: 358px;
+    height: 426px;
 }
 
 
@@ -321,7 +329,7 @@ body {
     position: absolute;
     height: 409px;
     left: -2379px;
-    top: calc(100vh - 539px);
+    top: calc(100vh - 531px);
     width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -329,8 +337,8 @@ body {
 .texto2 {
     position: absolute;
     height: 413px;
-    left: -1944px;
-    top: calc(100vh - 539px);
+    left: -1912px;
+    top: calc(100vh - 531px);
     width: 390px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -338,8 +346,8 @@ body {
 .texto3 {
     position: absolute;
     height: 413px;
-    left: -1616px;
-    top: calc(100vh - 539px);
+    left: -1467px;
+    top: calc(100vh - 531px);
     width: 403px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -347,8 +355,8 @@ body {
 .texto4 {
     position: absolute;
     height: 409px;
-    left: -1207px;
-    top: calc(100vh - 539px);
+    left: -1038px;
+    top: calc(100vh - 531px);
     width: 403px;
     background-repeat: no-repeat;
     background-size: 100% !important;
@@ -359,10 +367,10 @@ body {
 /*OUTDOORS2*/
 .outdoor21 {
     position: absolute;
-    left: -725px;
-    top: calc(100vh - 539px);
+    left: -651px;
+    top: calc(100vh - 471px);
     width: auto;
-    height: 490px;
+    height: 426px;
 }
 
 /*HOLOGRAMAS*/

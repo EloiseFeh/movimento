@@ -203,12 +203,12 @@ function animeManu(classe, numerador, denominador){
 
  
 
-  mudaOutdoor1(target,3.5,4,0.5);
+  mudaOutdoor1(target,3.5,4,1);
   animeTexto(target2,0.5,4,3);
-  animeTexto(target3,3,4,5.5)
-  animeTexto(target4,5.5,4,7.5);
-  animeTexto(target5,7.5,4,10.5);
-  mudaOutdoor2(target6, 11, 4,13.5);
+  animeTexto(target3,3,4,6)
+  animeTexto(target4,6,4,8);
+  animeTexto(target5,8,4,10.5);
+  mudaOutdoor2(target6, 11.2, 4,14);
   animeHolograma(target7,9,4,12);
   animeHolograma(target8, 13, 4,15);
   animeHolograma(target9, 15.5, 4,18);
