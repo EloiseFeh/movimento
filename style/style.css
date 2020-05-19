@@ -376,21 +376,21 @@ body {
 /*HOLOGRAMAS*/
 .holograma1 {
     position: absolute;
-    left: -2420px;
+    left: -2406px;
     top: calc(100vh - 605px);
     width: auto;
     height: 499px;
 }
 .holograma2 {
     position: absolute;
-    left: -1609px;
+    left: -1590px;
     top: calc(100vh - 605px);
     width: auto;
     height: 502px;
 }
 .holograma3 {
     position: absolute;
-    left: -1184px;
+    left: -1169px;
     top: calc(100vh - 605px);
     width: auto;
     height: 499px;
