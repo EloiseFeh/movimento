@@ -70,9 +70,16 @@ body {
 .link:hover {
   color: #207b74;
 }
+
+/*Estilização relacionado aos popups*/
+
 .dialogo {
   display: flex !important;
   align-items: center;
+}
+
+.di-rodney{
+  justify-content: space-around;
 }
 
 .dialogo-img {
@@ -82,6 +89,18 @@ body {
   padding-left: 5%;
   padding-bottom: 2%;
 }
+
+#intro-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center !important;
+}
+
+#lucas-intro{
+  width: 150px;
+  height: 150px;
+}
+
 /*BALÕES DE INTERAÇÃO*/
 .balao-luiziane{
     position: absolute;
@@ -247,6 +266,7 @@ body {
     background-size: 100% !important;
     width: 25px;
     background-repeat: no-repeat;
+    z-index: 1;
 }
 
 /*MODAL INTERATIVO SESSAO1*/

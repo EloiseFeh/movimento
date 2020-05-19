@@ -16,17 +16,23 @@
     <script src="js/jquery.modal.min.js"></script>
   </head>
   <body>
-    <div id="lancet" style="background-image: url('imgs/ciclista.gif')"></div>
-    <div id="outer-wrapper" onscroll="movimentacao()">
-      <div class="wrapper">
-        <!-- SESSÃO - INTRODUÇÃO -->
-        <a href="index.html">
+    <div id="popup-intro">
+      <div id="intro-content">
+        <img src="imgs/personagens/Lucas.png" id="lucas-intro">
+        <p id="text-intro">Este é um Lucas, um médico que gosta de se exercitar andando de bicicleta e aprender mais com as pessoas e as experiências do meio em que vive. Ele é um profissional  que acredita no conhecimento em constante movimento para conseguir transformar a saúde.</p>
+      </div>
+    </div>
+    <a href="index.html">
           <div
             class="retorno"
             id="retorno"
             style="background-image: url('imgs/elementos-cenario/retorno.png')"
           ></div>
-       </a>
+    </a>
+    <div id="lancet" style="background-image: url('imgs/ciclista.gif')"></div>
+    <div id="outer-wrapper" onscroll="movimentacao()">
+      <div class="wrapper">
+        <!-- SESSÃO - INTRODUÇÃO -->
         <img class="background" src="./imgs/bg/intro.png" />
 
         <!-- SESSÃO - Nº 1 -->
@@ -168,7 +174,7 @@
         </div>
 
         <div class="modal" id="pessoa4" style="display:none;">
-          <div class="dialogo">
+          <div class="dialogo di-rodney">
             <div class="texto">
               <h3>Rodney:</h3>
               <p>E qual o seu benefício?</p>
@@ -527,7 +533,7 @@
 
             </div>
 
-            <img class="dialogo-img" src="imgs/Ciclistas.gif" />
+            <img class="dialogo-img" src="imgs/personagens/cic.png" />
 
           </div>
           

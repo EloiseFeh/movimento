@@ -2,8 +2,14 @@
  * @author Container Digital Jr <containerdigitaljr@gmail.com>
  */
 
+window.onload = function() {
+   $("#popup-intro").modal();
+};
+
+
+// FUNÇÕES PARA FIXAR ELEMENTOS NO SCROLL
+
 window.addEventListener("scroll", () => {
-  console.log("scroll");
 
   var window_width = $(window).width() - $("#lancet").width();
 
@@ -13,6 +19,20 @@ window.addEventListener("scroll", () => {
 
   var object_position_left = window_width * (scroll_position / document_height);
   $("#lancet").css({
+    left: object_position_left
+  });
+});
+
+window.addEventListener("scroll", () => {
+
+  var window_width = $(window).width() - $(".retorno").width();
+
+  var document_height = $(document).height() - $(window).height();
+
+  var scroll_position = $(window).scrollTop();
+
+  var object_position_left = window_width * (scroll_position / document_height);
+  $(".retorno").css({
     left: object_position_left
   });
 });
