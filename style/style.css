@@ -207,7 +207,7 @@ body {
 }
 .manu{
     position: absolute;
-    left: -173px;
+    left: -168px;
     top: calc(101vh - 232px);
     width: auto;
     height: 84px;
@@ -270,7 +270,7 @@ body {
     position: absolute;
     height: 41px;
     left: 41px;
-    top: calc(100vh - 612px);
+    top: calc(100vh - 635px);
     background-size: 100% !important;
     width: 25px;
     background-repeat: no-repeat;
@@ -409,7 +409,7 @@ body {
 /*PALCO*/
 .palco{
     position: absolute;
-    left: -233px;
+    left: -224px;
     top: calc(100vh - 339px);
     width: auto;
     height: 253px;
