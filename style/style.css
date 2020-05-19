@@ -187,7 +187,7 @@ body {
     position: absolute;
     left: 1794px;
     top: calc(100vh - 183px);
-    height: 629px;
+    height: 102px;
     width: 37px;
     z-index: 1;
     background-size: 100% !important;
@@ -290,8 +290,8 @@ body {
     width: 300px;
     position: absolute;
     height: auto;
-    top: calc(100vh - 258px);
-    left: 2869px;
+    top: calc(100vh - 256px);
+    left: 2785px;
 
 }
 .importante2{
@@ -307,10 +307,10 @@ body {
 /*OUTDOORS1*/
 .outdoor11 {
     position: absolute;
-    left: -3226px;
-    top: calc(100vh - 515px);
+    left: -3222px;
+    top: calc(100vh - 405px);
     width: auto;
-    height: 467px;
+    height: 358px;
 }
 
 
@@ -319,8 +319,8 @@ body {
 /*TEXTOS SERRILHADOS*/
 .texto1{
     position: absolute;
-    height: 427px;
-    left: -2380px;
+    height: 409px;
+    left: -2379px;
     top: calc(100vh - 539px);
     width: 390px;
     background-repeat: no-repeat;
@@ -329,7 +329,7 @@ body {
 .texto2 {
     position: absolute;
     height: 413px;
-    left: -1947px;
+    left: -1944px;
     top: calc(100vh - 539px);
     width: 390px;
     background-repeat: no-repeat;
@@ -338,7 +338,7 @@ body {
 .texto3 {
     position: absolute;
     height: 413px;
-    left: -1529px;
+    left: -1616px;
     top: calc(100vh - 539px);
     width: 403px;
     background-repeat: no-repeat;
@@ -347,7 +347,7 @@ body {
 .texto4 {
     position: absolute;
     height: 409px;
-    left: -1118px;
+    left: -1207px;
     top: calc(100vh - 539px);
     width: 403px;
     background-repeat: no-repeat;

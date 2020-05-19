@@ -208,7 +208,7 @@ function animeManu(classe, numerador, denominador){
   animeTexto(target3,3,4,5.5)
   animeTexto(target4,5.5,4,7.5);
   animeTexto(target5,7.5,4,10.5);
-  mudaOutdoor2(target6, 10.5, 4,13.5);
+  mudaOutdoor2(target6, 11, 4,13.5);
   animeHolograma(target7,9,4,12);
   animeHolograma(target8, 13, 4,15);
   animeHolograma(target9, 15.5, 4,18);
