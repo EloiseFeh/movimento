@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background: #DEF3FD;
+  background: #e3f1fb;
   font-family: "Orkney";
   overflow: hidden;
 }
@@ -90,6 +90,20 @@ body {
   padding-bottom: 2%;
 }
 
+.manu-txt{
+  width: 50%;
+}
+
+.manu-img{
+  padding-left: 15%;
+  padding-right: 0;
+}
+
+.gleyc-img{
+  width: auto;
+  height: auto;
+}
+
 #intro-content{
   display: flex;
   justify-content: space-around;
@@ -100,6 +114,24 @@ body {
   width: 150px;
   height: 150px;
 }
+
+.div-button{
+  height: 35px;
+  width: 70px;
+  background: #207b74;
+  border-radius: 5px;
+  position: relative;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-button{
+  text-decoration: none;
+  color: white;
+}
+
 
 /*BALÕES DE INTERAÇÃO*/
 .balao-luiziane{
@@ -269,8 +301,8 @@ body {
 .retorno{
     position: absolute;
     height: 41px;
-    left: 41px;
-    top: calc(100vh - 635px);
+    left: 50px;
+    top: 50px;
     background-size: 100% !important;
     width: 25px;
     background-repeat: no-repeat;
