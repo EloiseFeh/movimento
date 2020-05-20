@@ -4,6 +4,8 @@
 
 window.onload = function() {
    $("#popup-intro").modal();
+   $("#intro-content").css("display", "flex");
+   $("#div-button").css("display", "flex");
 };
 
 
