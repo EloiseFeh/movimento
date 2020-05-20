@@ -83,7 +83,7 @@ body {
 }
 
 .dialogo-img {
-  width: 100px;
+  width: auto;
   height: 100px;
   padding-right: 10%;
   padding-left: 5%;
@@ -99,10 +99,6 @@ body {
   padding-right: 0;
 }
 
-.gleyc-img{
-  width: auto;
-  height: auto;
-}
 
 #intro-content{
   display: flex;
