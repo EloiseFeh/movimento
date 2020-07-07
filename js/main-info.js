@@ -117,7 +117,7 @@ function mudaOutdoor2(classe,num1,denominador,num2){
     classe.each(function(){
         var itemLeft = $(this).offset().left;
         console.log(itemLeft);
-          if (scroll+offset > itemLeft && scroll-fim<itemLeft) {
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
             $(this).addClass(animationClass);
             $("#outdoor2").css("display", "none");
         
@@ -148,19 +148,18 @@ function animeHolograma(classe,num1,denominador,num2){
 /*ANIMAÇÃO DOS TEXTOS*/
 
  function animeTexto(classe, num1, denominador,num2){
-  var offset = $(window).width()*num1/denominador,
+   var offset = $(window).width()*num1/denominador,
     fim = $(window).width()*num2/denominador;
     classe.each(function(){
         var itemLeft = $(this).offset().left;
         console.log(itemLeft);
-          if (scroll+offset > itemLeft && scroll+fim<itemLeft) {
-             $(this).addClass(animationClass);
-        
+          if (scroll-offset > itemLeft && scroll-fim<itemLeft) {
+            $(this).addClass(animationClass);
+
           }else{
             $(this).removeClass(animationClass);
           }
      })
-
 }
 
   // FUNÇÕES QUE GERA A ANIMAÇÃO DO METEORO EXPLODINDO E SURGINDO PALCO COM A MANU
@@ -206,17 +205,17 @@ function animeManu(classe, numerador, denominador){
 
  
 
-  mudaOutdoor1(target,15,4,12.5);
-  animeTexto(target2,11,4,9);
-  animeTexto(target3,8,4,6)
-  animeTexto(target4,5.5,4,4);
-  animeTexto(target5,3.5,4,1);
-  mudaOutdoor2(target6, 0.6, 4,2.5);
-  animeHolograma(target7,2,4,4.5);
-  animeHolograma(target8, 6, 4,8);
-  animeHolograma(target9, 9, 4,11);
-  animeMeteoro(target10,12,4);
-  setTimeout(function(){animePalco(target11,12,4);}, 2600);
-  setTimeout(function(){animeManu(target12,12,4);}, 2600);
+  mudaOutdoor1(target,3.5,4,1);
+  animeTexto(target2,0.5,4,3);
+  animeTexto(target3,3,4,6)
+  animeTexto(target4,6,4,8);
+  animeTexto(target5,8,4,10.5);
+  mudaOutdoor2(target6, 11.2, 4,14);
+  animeHolograma(target7,9,4,12);
+  animeHolograma(target8, 13, 4,15);
+  animeHolograma(target9, 15.5, 4,18);
+  animeMeteoro(target10,19,4);
+  setTimeout(function(){animePalco(target11,19,4);}, 2600);
+  setTimeout(function(){animeManu(target12,19,4);}, 2600);
 
 }
